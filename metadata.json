@@ -1,0 +1,6 @@
+{
+  "name": "River Run South Condominium - Community Portal",
+  "description": "Resident & Lender Resource Portal for River Run South Condominium in Miami, FL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
