@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F2438"/>
+      <stop offset="100%" stop-color="#08131E"/>
+    </linearGradient>
+
+    <!-- Tower Linear Gradients -->
+    <linearGradient id="tower-left-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+
+    <linearGradient id="tower-right-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+
+    <linearGradient id="sun-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <linearGradient id="water-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base (Squircle for iOS/Android & Favicon consistency) -->
+  <rect x="0" y="0" width="512" height="512" rx="108" fill="url(#bg-grad)"/>
+
+  <!-- Outer Glow / Accent Ring -->
+  <rect x="12" y="12" width="488" height="488" rx="96" fill="none" stroke="#0284C7" stroke-width="6" stroke-opacity="0.3"/>
+
+  <!-- Golden Sun Accent -->
+  <circle cx="256" cy="180" r="72" fill="url(#sun-grad)"/>
+  <circle cx="256" cy="180" r="84" fill="none" stroke="#F59E0B" stroke-width="4" stroke-opacity="0.35" stroke-dasharray="8 6"/>
+
+  <!-- Miami River Water Waves (Base) -->
+  <path d="M 40 400 C 140 375, 200 425, 256 400 C 312 375, 372 425, 472 400 L 472 440 C 372 465, 312 415, 256 440 C 200 465, 140 415, 40 440 Z" fill="url(#water-grad)" opacity="0.95"/>
+  <path d="M 40 425 C 130 405, 190 445, 256 425 C 322 405, 382 445, 472 425 L 472 460 C 372 475, 312 440, 256 460 C 200 440, 140 475, 40 460 Z" fill="#38BDF8" opacity="0.6"/>
+
+  <!-- Twin Towers (River Run South 2415 & 2475 Towers) -->
+
+  <!-- Left Tower (2415 NW 16th St Rd) -->
+  <!-- Hip Roof (Seafoam Mint #10B981) -->
+  <polygon points="120,200 185,150 250,200" fill="#10B981"/>
+  <polygon points="120,200 185,150 185,200" fill="#34D399" opacity="0.6"/>
+  
+  <!-- Left Tower Main Body -->
+  <rect x="128" y="200" width="114" height="195" fill="url(#tower-left-grad)" rx="4"/>
+  <!-- Left Tower Architectural Balconies & Windows (High Contrast White) -->
+  <g fill="#FFFFFF" opacity="0.95">
+    <!-- Row 1 -->
+    <rect x="142" y="218" width="38" height="16" rx="2"/>
+    <rect x="190" y="218" width="38" height="16" rx="2"/>
+    <!-- Row 2 -->
+    <rect x="142" y="246" width="38" height="16" rx="2"/>
+    <rect x="190" y="246" width="38" height="16" rx="2"/>
+    <!-- Row 3 -->
+    <rect x="142" y="274" width="38" height="16" rx="2"/>
+    <rect x="190" y="274" width="38" height="16" rx="2"/>
+    <!-- Row 4 -->
+    <rect x="142" y="302" width="38" height="16" rx="2"/>
+    <rect x="190" y="302" width="38" height="16" rx="2"/>
+    <!-- Row 5 -->
+    <rect x="142" y="330" width="38" height="16" rx="2"/>
+    <rect x="190" y="330" width="38" height="16" rx="2"/>
+    <!-- Grand Entry / Lobby Glass -->
+    <rect x="165" y="360" width="40" height="35" rx="3" fill="#E0F2FE"/>
+  </g>
+
+  <!-- Right Tower (2475 NW 16th St Rd) -->
+  <!-- Hip Roof (Seafoam Mint #10B981) -->
+  <polygon points="262,200 327,150 392,200" fill="#10B981"/>
+  <polygon points="262,200 327,150 327,200" fill="#34D399" opacity="0.6"/>
+
+  <!-- Right Tower Main Body -->
+  <rect x="270" y="200" width="114" height="195" fill="url(#tower-right-grad)" rx="4"/>
+  <!-- Right Tower Architectural Balconies & Windows -->
+  <g fill="#FFFFFF" opacity="0.95">
+    <!-- Row 1 -->
+    <rect x="284" y="218" width="38" height="16" rx="2"/>
+    <rect x="332" y="218" width="38" height="16" rx="2"/>
+    <!-- Row 2 -->
+    <rect x="284" y="246" width="38" height="16" rx="2"/>
+    <rect x="332" y="246" width="38" height="16" rx="2"/>
+    <!-- Row 3 -->
+    <rect x="284" y="274" width="38" height="16" rx="2"/>
+    <rect x="332" y="274" width="38" height="16" rx="2"/>
+    <!-- Row 4 -->
+    <rect x="284" y="302" width="38" height="16" rx="2"/>
+    <rect x="332" y="302" width="38" height="16" rx="2"/>
+    <!-- Row 5 -->
+    <rect x="284" y="330" width="38" height="16" rx="2"/>
+    <rect x="332" y="330" width="38" height="16" rx="2"/>
+    <!-- Grand Entry / Lobby Glass -->
+    <rect x="307" y="360" width="40" height="35" rx="3" fill="#E0F2FE"/>
+  </g>
+
+  <!-- Center Palm Tree Accent silhouette -->
+  <path d="M 256 395 Q 256 345 256 320" stroke="#059669" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 256 320 Q 240 305 220 310 M 256 320 Q 272 305 292 310 M 256 320 Q 235 325 222 335 M 256 320 Q 277 325 290 335" stroke="#10B981" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>
