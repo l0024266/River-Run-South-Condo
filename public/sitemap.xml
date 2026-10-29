@@ -1,105 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Primary Live Origin: river-run-south-condo.pages.dev -->
   <url>
-    <loc>https://riverrunsouthcondo.com/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#overview</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#overview</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#condo-101</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#condo-101</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#portals</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#portals</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#budget-breakdown</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#budget-breakdown</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#marina</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#marina</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#faqs</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#faqs</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#resident-directory</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#resident-directory</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#insurance</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#insurance</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#rules</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#rules</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#noise-guidelines</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://river-run-south-condo.pages.dev/#realtor-hub</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#directory</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#deliveries</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://river-run-south-condo.pages.dev/#directory</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#news</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#news</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#neighborhood</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#neighborhood</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#market</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#market</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#dashboards</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#dashboards</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://riverrunsouthcondo.com/#governance</loc>
-    <lastmod>2026-10-26</lastmod>
+    <loc>https://river-run-south-condo.pages.dev/#governance</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Secondary Custom Origin -->
+  <url>
+    <loc>https://riverrunsouthcondo.com/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>
