@@ -1477,6 +1477,21 @@
       max-width: 920px;
       text-align: center;
       margin: 0 auto;
+      opacity: 0;
+      transform: translateY(22px);
+      animation: rrsHeroEntrance 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes rrsHeroEntrance {
+      0% {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     #rrs-portal-root .rrs-badge-hero {
@@ -5584,8 +5599,25 @@
       }
     }
 
-    /* 7. Samsung Internet Force Dark Mode Protection */
+    /* 7. Interactive Hero Status Card Buttons */
+    #rrs-portal-root .rrs-hero-status-card-btn {
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    #rrs-portal-root .rrs-hero-status-card-btn:hover {
+      transform: translateY(-3px) !important;
+      border-color: rgba(255, 255, 255, 0.45) !important;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45) !important;
+      background: rgba(30, 41, 59, 0.85) !important;
+    }
+
+    #rrs-portal-root .rrs-hero-status-card-btn:active {
+      transform: scale(0.97) !important;
+    }
+
+    /* 8. Samsung Internet Force Dark Mode Protection */
     #rrs-portal-root .rrs-status-card,
+    #rrs-portal-root .rrs-hero-status-card-btn,
     #rrs-portal-root .rrs-whatsapp-real-btn,
     #rrs-portal-root .rrs-btn-primary,
     #rrs-portal-root .rrs-amenity-card,
@@ -5951,66 +5983,477 @@
 
   
 
-    /* WhatsApp Share Button & Floating Action Button Styles */
-    #rrs-portal-root .rrs-whatsapp-share-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-      color: #FFFFFF;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: var(--rrs-radius-md);
-      padding: 12px 20px;
-      font-weight: 800;
-      font-size: 0.95rem;
-      cursor: pointer;
-      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      text-decoration: none;
-      line-height: 1;
+    /* Universal Social Share Button & Floating Action Button Styles (50% Transparent Circular Glass Button) */
+    .rrs-universal-floating-btn,
+    .rrs-whatsapp-floating-btn,
+    #rrs-universal-share-btn,
+    #rrs-whatsapp-share-btn,
+    #rrs-portal-root .rrs-whatsapp-floating-btn,
+    #rrs-portal-root .rrs-universal-floating-btn {
+      position: fixed !important;
+      bottom: 24px !important;
+      left: 24px !important;
+      z-index: 999999 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 48px !important;
+      height: 48px !important;
+      padding: 0 !important;
+      background: rgba(2, 132, 199, 0.5) !important; /* 50% transparent coastal river blue */
+      color: #FFFFFF !important;
+      border: 1.5px solid rgba(255, 255, 255, 0.5) !important;
+      border-radius: 50% !important;
+      cursor: pointer !important;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(2, 132, 199, 0.3) !important;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      line-height: 1 !important;
+      text-decoration: none !important;
+      pointer-events: auto !important;
+      touch-action: manipulation !important;
     }
 
-    #rrs-portal-root .rrs-whatsapp-share-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
-      background: linear-gradient(135deg, #22C55E 0%, #0F766E 100%);
+    .rrs-universal-floating-btn:hover,
+    .rrs-whatsapp-floating-btn:hover,
+    #rrs-universal-share-btn:hover,
+    #rrs-whatsapp-share-btn:hover,
+    #rrs-portal-root .rrs-whatsapp-floating-btn:hover,
+    #rrs-portal-root .rrs-universal-floating-btn:hover {
+      background: rgba(2, 132, 199, 0.85) !important;
+      transform: translateY(-3px) scale(1.08) !important;
+      box-shadow: 0 12px 36px rgba(2, 132, 199, 0.55), 0 6px 18px rgba(0, 0, 0, 0.35) !important;
     }
 
-    #rrs-portal-root .rrs-whatsapp-share-btn:active {
-      transform: translateY(0);
-    }
-
-    #rrs-portal-root .rrs-whatsapp-floating-btn {
-      position: fixed;
-      bottom: 24px;
-      left: 24px;
-      z-index: 999;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-      color: #FFFFFF;
-      border: 1.5px solid rgba(255, 255, 255, 0.4);
-      border-radius: 9999px;
-      padding: 12px 20px;
-      font-weight: 800;
-      font-size: 0.88rem;
-      cursor: pointer;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(37, 211, 102, 0.4);
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    #rrs-portal-root .rrs-whatsapp-floating-btn:hover {
-      transform: translateY(-3px) scale(1.03);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3), 0 6px 18px rgba(37, 211, 102, 0.55);
+    .rrs-universal-floating-btn:active,
+    .rrs-whatsapp-floating-btn:active,
+    #rrs-universal-share-btn:active,
+    #rrs-whatsapp-share-btn:active,
+    #rrs-portal-root .rrs-whatsapp-floating-btn:active,
+    #rrs-portal-root .rrs-universal-floating-btn:active {
+      transform: translateY(0) scale(0.95) !important;
     }
 
     @media (max-width: 768px) {
-      #rrs-portal-root .rrs-whatsapp-floating-btn {
-        bottom: 80px;
-        left: 16px;
-        padding: 10px 16px;
-        font-size: 0.82rem;
+      .rrs-universal-floating-btn,
+      .rrs-whatsapp-floating-btn,
+      #rrs-universal-share-btn,
+      #rrs-whatsapp-share-btn,
+      #rrs-portal-root .rrs-whatsapp-floating-btn,
+      #rrs-portal-root .rrs-universal-floating-btn {
+        bottom: 80px !important;
+        left: 16px !important;
+        width: 44px !important;
+        height: 44px !important;
+        padding: 0 !important;
       }
+    }
+
+    /* Universal Social Share Modal Styling */
+    .rrs-share-modal {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      z-index: 1000000 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 16px !important;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s ease, visibility 0.25s ease !important;
+    }
+
+    .rrs-share-modal.is-open {
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+    }
+
+    .rrs-share-modal-backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(8, 19, 30, 0.72);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .rrs-share-modal-card {
+      position: relative;
+      background: var(--rrs-bg-card);
+      border: 1.5px solid var(--rrs-border);
+      border-radius: var(--rrs-radius-xl);
+      width: 100%;
+      max-width: 520px;
+      padding: 28px;
+      box-shadow: var(--rrs-shadow-lg), 0 20px 50px rgba(0, 0, 0, 0.35);
+      z-index: 2;
+      transform: scale(0.92) translateY(10px);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      max-height: 90vh;
+      overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .rrs-share-modal-card::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+
+    .rrs-share-modal.is-open .rrs-share-modal-card {
+      transform: scale(1) translateY(0);
+    }
+
+    .rrs-share-modal-close {
+      position: absolute;
+      top: 16px;
+      right: 18px;
+      background: var(--rrs-bg-subtle);
+      border: 1px solid var(--rrs-border);
+      color: var(--rrs-text-heading);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .rrs-share-modal-close:hover {
+      background: var(--rrs-river-blue);
+      color: #FFFFFF;
+      transform: rotate(90deg);
+    }
+
+    .rrs-share-modal-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 22px;
+      padding-right: 32px;
+    }
+
+    .rrs-share-modal-icon-badge {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--rrs-radius-md);
+      background: var(--rrs-bg-subtle);
+      border: 1px solid var(--rrs-border);
+      color: var(--rrs-river-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .rrs-share-modal-header h3 {
+      font-size: 1.22rem;
+      font-weight: 800;
+      color: var(--rrs-text-heading);
+      margin: 0 0 4px 0;
+      line-height: 1.3;
+    }
+
+    .rrs-share-modal-header p {
+      font-size: 0.88rem;
+      color: var(--rrs-text-muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .rrs-native-share-btn {
+      width: 100%;
+      padding: 12px 18px;
+      background: linear-gradient(135deg, var(--rrs-river-blue) 0%, #0369A1 100%);
+      color: #FFFFFF;
+      border: none;
+      border-radius: var(--rrs-radius-md);
+      font-weight: 800;
+      font-size: 0.9rem;
+      cursor: pointer;
+      box-shadow: var(--rrs-shadow-sm);
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .rrs-native-share-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--rrs-shadow-md);
+      filter: brightness(1.08);
+    }
+
+    .rrs-share-platforms-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    @media (min-width: 440px) {
+      .rrs-share-platforms-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .rrs-share-platform-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 10px;
+      background: var(--rrs-bg-subtle);
+      border: 1.5px solid var(--rrs-border);
+      border-radius: var(--rrs-radius-md);
+      color: var(--rrs-text-heading);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.82rem;
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+
+    .rrs-share-platform-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--rrs-shadow-md);
+      border-color: var(--rrs-river-blue);
+    }
+
+    .rrs-share-platform-btn:active {
+      transform: translateY(0) scale(0.96);
+    }
+
+    .rrs-share-platform-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s ease;
+    }
+
+    .rrs-share-platform-btn:hover .rrs-share-platform-icon {
+      transform: scale(1.1);
+    }
+
+    /* Platform Brand Colors */
+    .rrs-share-whatsapp-btn .rrs-share-platform-icon { background: #25D366; }
+    .rrs-share-facebook-btn .rrs-share-platform-icon { background: #1877F2; }
+    .rrs-share-x-btn .rrs-share-platform-icon { background: #0F172A; }
+    .rrs-share-linkedin-btn .rrs-share-platform-icon { background: #0A66C2; }
+    .rrs-share-sms-btn .rrs-share-platform-icon { background: #34C759; }
+    .rrs-share-email-btn .rrs-share-platform-icon { background: #6366F1; }
+
+    /* Copy Link Box */
+    .rrs-share-copy-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--rrs-bg-subtle);
+      border: 1.5px solid var(--rrs-border);
+      border-radius: var(--rrs-radius-md);
+      padding: 6px 6px 6px 14px;
+    }
+
+    .rrs-share-copy-box input {
+      flex-grow: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 0.85rem;
+      color: var(--rrs-text);
+      font-family: var(--rrs-font-body);
+      font-weight: 500;
+    }
+
+    .rrs-share-copy-btn {
+      background: var(--rrs-river-blue);
+      color: #FFFFFF;
+      border: none;
+      border-radius: var(--rrs-radius-sm);
+      padding: 9px 16px;
+      font-weight: 800;
+      font-size: 0.82rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+      box-shadow: var(--rrs-shadow-sm);
+    }
+
+    .rrs-share-copy-btn:hover {
+      background: var(--rrs-river-blue-dark);
+    }
+
+    .rrs-share-copy-btn.copied {
+      background: #059669 !important;
+    }
+
+    /* Interactive Feature Tag Link Badges in AppFolio Card */
+    #rrs-portal-root .rrs-appfolio-tag-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: #F1F5F9 !important;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.84rem;
+      cursor: pointer;
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    #rrs-portal-root .rrs-appfolio-tag-link:hover,
+    #rrs-portal-root .rrs-appfolio-tag-link:focus-visible {
+      background: rgba(2, 132, 199, 0.45);
+      border-color: #38BDF8;
+      color: #FFFFFF !important;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
+      outline: none;
+    }
+
+    #rrs-portal-root .rrs-appfolio-tag-link:active {
+      transform: translateY(0);
+    }
+
+    #rrs-portal-root .rrs-appfolio-tag-link svg {
+      opacity: 0.8;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    #rrs-portal-root .rrs-appfolio-tag-link:hover svg {
+      opacity: 1;
+      transform: translate(1px, -1px);
+    }
+
+    /* GLOBAL INTERACTIVE BADGES, CHIPS & PILLS DESIGN RULE */
+    #rrs-portal-root .rrs-pill,
+    #rrs-portal-root .rrs-chip,
+    #rrs-portal-root .rrs-badge,
+    #rrs-portal-root .rrs-owner-badge,
+    #rrs-portal-root .rrs-logo-chip,
+    #rrs-portal-root .rrs-badge-hero,
+    #rrs-portal-root .rrs-check-badge {
+      cursor: pointer !important;
+      user-select: none;
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    #rrs-portal-root .rrs-pill:hover,
+    #rrs-portal-root .rrs-chip:hover,
+    #rrs-portal-root .rrs-badge:hover,
+    #rrs-portal-root .rrs-owner-badge:hover,
+    #rrs-portal-root .rrs-logo-chip:hover,
+    #rrs-portal-root .rrs-badge-hero:hover,
+    #rrs-portal-root .rrs-check-badge:hover {
+      transform: translateY(-2px) scale(1.02) !important;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3) !important;
+      filter: brightness(1.12) !important;
+    }
+
+    #rrs-portal-root .rrs-pill:active,
+    #rrs-portal-root .rrs-chip:active,
+    #rrs-portal-root .rrs-badge:active,
+    #rrs-portal-root .rrs-owner-badge:active,
+    #rrs-portal-root .rrs-logo-chip:active,
+    #rrs-portal-root .rrs-badge-hero:active,
+    #rrs-portal-root .rrs-check-badge:active {
+      transform: translateY(0) scale(0.97) !important;
+    }
+
+    /* REACTIVE 5-ROW TEXT CLAMP WITH 'READ MORE' BADGE INSIDE BOTTOM-RIGHT */
+    #rrs-portal-root .rrs-clamped-5 {
+      position: relative !important;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 5 !important;
+      -webkit-box-orient: vertical !important;
+      max-height: calc(var(--rrs-lh, 1.5em) * 5) !important;
+      overflow: hidden !important;
+      transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    #rrs-portal-root .rrs-clamped-5.rrs-expanded-text {
+      display: block !important;
+      -webkit-line-clamp: unset !important;
+      max-height: 4000px !important;
+      overflow: visible !important;
+    }
+
+    #rrs-portal-root .rrs-read-more-badge {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 3px !important;
+      padding: 3px 12px !important;
+      background: rgba(2, 132, 199, 0.5) !important; /* 50% transparent coastal blue */
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      color: #FFFFFF !important;
+      font-size: 0.75rem !important;
+      font-weight: 800 !important;
+      font-family: var(--rrs-font-heading), sans-serif !important;
+      border-radius: 9999px !important;
+      border: 1.5px solid rgba(255, 255, 255, 0.45) !important;
+      cursor: pointer !important;
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+      line-height: 1.25 !important;
+      user-select: none !important;
+      text-transform: none !important;
+      z-index: 10 !important;
+    }
+
+    /* Bottom-Right position INSIDE the text when collapsed */
+    #rrs-portal-root .rrs-clamped-5:not(.rrs-expanded-text) .rrs-read-more-badge {
+      position: absolute !important;
+      bottom: 2px !important;
+      right: 2px !important;
+      margin: 0 !important;
+    }
+
+    /* Relative positioning inline at end of text when expanded */
+    #rrs-portal-root .rrs-clamped-5.rrs-expanded-text .rrs-read-more-badge {
+      position: relative !important;
+      display: inline-flex !important;
+      margin-left: 8px !important;
+      vertical-align: middle !important;
+    }
+
+    #rrs-portal-root .rrs-read-more-badge:hover {
+      background: rgba(2, 132, 199, 0.82) !important;
+      transform: scale(1.06) !important;
+      box-shadow: 0 6px 18px rgba(2, 132, 199, 0.5) !important;
+    }
+
+    #rrs-portal-root.rrs-dark-mode .rrs-read-more-badge {
+      background: rgba(56, 189, 248, 0.5) !important; /* 50% transparent sky blue in dark mode */
+      color: #08131E !important;
+      border-color: rgba(125, 211, 252, 0.6) !important;
+    }
+
+    #rrs-portal-root.rrs-dark-mode .rrs-read-more-badge:hover {
+      background: rgba(56, 189, 248, 0.88) !important;
     }

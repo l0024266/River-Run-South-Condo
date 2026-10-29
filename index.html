@@ -156,6 +156,37 @@
         "openingHours": "Mo-Su 00:00-24:00"
       },
       {
+        "@type": "HowTo",
+        "@id": "https://river-run-south-condo.pages.dev/#delivery-guide",
+        "name": "Delivery Driver Access & Building Navigation Guide at River Run South",
+        "alternateName": "Guía de Repartidores y Orientación de Edificios en River Run South",
+        "inLanguage": ["en", "es"],
+        "description": "Official access protocol, tower navigation (2475 West on Left, 2415 East on Right), security gate check-in, and freight elevator padding requirements for Amazon, UPS, FedEx, DoorDash, UberEats, and furniture movers.",
+        "url": "https://river-run-south-condo.pages.dev/#deliveries",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Building Orientation / Orientación de Edificios",
+            "text": "Building 2475 NW 16th St Rd is on the LEFT (West Tower) and Building 2415 NW 16th St Rd is on the RIGHT (East Tower) when entering from NW 16th St Rd."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Security Gate Check-In / Registro en Garita",
+            "text": "Enter using the right-hand visitor lane, stop at the guardhouse window, state unit number and recipient name, and show delivery app details."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Zero Tailgating Rule / Prohibido Tailgating",
+            "text": "Never follow behind another vehicle. The automatic barrier arm drops after every vehicle."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Large Deliveries & Elevator Padding / Mudanzas y Muebles",
+            "text": "Appliance and furniture deliveries require 48 hours notice with Loyalty Property Management, damage deposit, and mandatory elevator wall padding preparation (Mon-Fri 8:30 AM - 4:30 PM)."
+          }
+        ]
+      },
+      {
         "@type": "WebApplication",
         "@id": "https://river-run-south-condo.pages.dev/#appfolio-portal",
         "name": "Online Portal by AppFolio (River Run South)",
@@ -391,12 +422,12 @@
             </div>
             <div class="rrs-logo-hover-title">River Run South Condominium</div>
             <div class="rrs-logo-hover-chips">
-              <span class="rrs-logo-chip">🏢 6 Floors Total</span>
-              <span class="rrs-logo-chip rrs-logo-chip-blue">🚗 1st Floor Parking</span>
-              <span class="rrs-logo-chip rrs-logo-chip-green">🟢 Green Hip Roofs</span>
-              <span class="rrs-logo-chip rrs-logo-chip-blue">🎨 Light Blue &amp; White</span>
-              <span class="rrs-logo-chip rrs-logo-chip-green">🌴 Terrace over Parking</span>
-              <span class="rrs-logo-chip rrs-logo-chip-gold">🌀 Spiral Parking Ramp</span>
+              <a href="#resident-directory" class="rrs-logo-chip" title="View Resident Address Directory">🏢 Resident Directory</a>
+              <a href="#deliveries" class="rrs-logo-chip rrs-logo-chip-blue" title="View Delivery Driver &amp; Building Access Guide">🚚 Delivery Driver Guide</a>
+              <a href="#condo-101" class="rrs-logo-chip rrs-logo-chip-green" title="View Essential Resident Rules">📋 Essential Rules Guide</a>
+              <a href="#bylaws-master-full" class="rrs-logo-chip rrs-logo-chip-blue" title="View Complete Condominium Bylaws">📜 Complete Official Bylaws</a>
+              <a href="#neighborhood" class="rrs-logo-chip rrs-logo-chip-green" title="View Nearby Amenities &amp; Parks">🗺️ Neighborhood &amp; Parks</a>
+              <a href="#rules" class="rrs-logo-chip rrs-logo-chip-gold" title="View Community Parking Regulations">🅿️ Parking &amp; Gate Rules</a>
             </div>
             <p class="rrs-logo-hover-desc">
               Authentic vector architectural emblem: twin 6-floor towers (2415 &amp; 2475 NW 16th St Rd), 1st floor parking under towers and central courtyard terrace, crisp light blue &amp; white facade, green hip roof caps, and Miami River frontage.
@@ -510,54 +541,67 @@
         <nav class="rrs-mobile-drawer-nav">
           <a href="#portals" class="rrs-mobile-nav-link rrs-nav-highlight">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-            <span data-i18n="nav_portals">Resident Portal &amp; 2026 Budget</span>
+            <span data-i18n="nav_portals" data-en="Resident Portal &amp; 2026 Budget">Resident Portal &amp; 2026 Budget</span>
             <span style="margin-left: auto; font-size: 0.68rem; background: rgba(1, 101, 172, 0.12); color: var(--rrs-river-blue); padding: 2px 7px; border-radius: 9999px; font-weight: 800;">PORTAL</span>
           </a>
           <a href="#realtor-hub" class="rrs-mobile-nav-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            <span data-i18n="realtor_title">Realtor &amp; Leasing Agent Hub</span>
+            <span data-i18n="realtor_title" data-en="Realtor &amp; Leasing Agent Hub">Realtor &amp; Leasing Agent Hub</span>
             <span style="margin-left: auto; font-size: 0.65rem; background: rgba(16, 185, 129, 0.15); color: #059669; padding: 2px 7px; border-radius: 9999px; font-weight: 800;">MLS COPY</span>
           </a>
           <a href="#condo-101" class="rrs-mobile-nav-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            <span data-i18n="nav_condo_101">📋 Essential Rules &amp; Compliance Guide</span>
+            <span data-i18n="nav_condo_101" data-en="📋 Essential Rules &amp; Compliance Guide">📋 Essential Rules &amp; Compliance Guide</span>
           </a>
-          <a href="#insurance" class="rrs-mobile-nav-link" data-i18n="nav_insurance">
+          <a href="#deliveries" class="rrs-mobile-nav-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span data-i18n="nav_deliveries" data-en="🚚 Delivery Drivers &amp; Couriers">🚚 Delivery Drivers &amp; Couriers</span>
+            <span style="margin-left: auto; font-size: 0.65rem; background: rgba(245, 158, 11, 0.15); color: #D97706; padding: 2px 7px; border-radius: 9999px; font-weight: 800;">ACCESS</span>
+          </a>
+          <a href="#rules" class="rrs-mobile-nav-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span data-i18n="nav_rules" data-en="🅿️ Parking Regulations &amp; Gate Rules">🅿️ Parking Regulations &amp; Gate Rules</span>
+          </a>
+          <a href="#insurance" class="rrs-mobile-nav-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span>Master Insurance &amp; Flood Disclosures</span>
-          </a>
-          <a href="#market" class="rrs-mobile-nav-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-3 3"/></svg>
-            <span>Real Estate Market &amp; HOA Comps</span>
-          </a>
-          <a href="#resident-directory" class="rrs-mobile-nav-link" data-i18n="nav_address_dir">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            <span>Resident Address Directory (174)</span>
-          </a>
-          <a href="#faqs" class="rrs-mobile-nav-link" data-i18n="nav_faqs">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            <span>Community FAQs &amp; Pet Guidelines</span>
-          </a>
-          <a href="#neighborhood" class="rrs-mobile-nav-link" data-i18n="nav_area">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Neighborhood, Parks &amp; Vets</span>
+            <span data-i18n="nav_insurance" data-en="Master Insurance &amp; Flood Disclosures">Master Insurance &amp; Flood Disclosures</span>
           </a>
           <a href="#marina" class="rrs-mobile-nav-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"/><path d="M4 18 3 12h18l-1 6"/><path d="M12 2v10"/><path d="M12 4l7 4H5z"/></svg>
-            <span data-i18n="nav_marina_mobile">Miami River Marina &amp; Boat Slips</span>
+            <span data-i18n="nav_marina_mobile" data-en="Miami River Marina &amp; Boat Slips">Miami River Marina &amp; Boat Slips</span>
             <span style="margin-left: auto; font-size: 0.65rem; background: rgba(14, 165, 233, 0.12); color: #0284C7; padding: 2px 7px; border-radius: 9999px; font-weight: 800;">DISCLOSURE</span>
           </a>
-          <a href="#dashboards" class="rrs-mobile-nav-link" data-i18n="nav_radar">
+          <a href="#neighborhood" class="rrs-mobile-nav-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="nav_area" data-en="Neighborhood, Parks &amp; Vets">Neighborhood, Parks &amp; Vets</span>
+          </a>
+          <a href="#dashboards" class="rrs-mobile-nav-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36z"/></svg>
-            <span>Live Miami Weather &amp; Radar</span>
+            <span data-i18n="nav_radar" data-en="Live Miami Weather &amp; Radar">Live Miami Weather &amp; Radar</span>
           </a>
-          <a href="#directory" class="rrs-mobile-nav-link" data-i18n="nav_directory">
+          <a href="#market" class="rrs-mobile-nav-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-3 3"/></svg>
+            <span data-i18n="nav_market" data-en="Real Estate Market &amp; HOA Comps">Real Estate Market &amp; HOA Comps</span>
+          </a>
+          <a href="#resident-directory" class="rrs-mobile-nav-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span data-i18n="nav_address_dir" data-en="Resident Address Directory (174)">Resident Address Directory (174)</span>
+          </a>
+          <a href="#faqs" class="rrs-mobile-nav-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <span data-i18n="nav_faqs" data-en="Community FAQs &amp; Pet Guidelines">Community FAQs &amp; Pet Guidelines</span>
+          </a>
+          <a href="#directory" class="rrs-mobile-nav-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            <span>Operations &amp; Contact Directory</span>
+            <span data-i18n="nav_directory" data-en="Operations &amp; Contact Directory">Operations &amp; Contact Directory</span>
           </a>
-          <a href="#news" class="rrs-mobile-nav-link" data-i18n="nav_news">
+          <a href="#governance" class="rrs-mobile-nav-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span data-i18n="nav_stats" data-en="Governance, Bylaws &amp; Building Specs">Governance, Bylaws &amp; Building Specs</span>
+          </a>
+          <a href="#news" class="rrs-mobile-nav-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/></svg>
-            <span>Local Miami News Feed</span>
+            <span data-i18n="nav_news" data-en="Local Miami News Feed">Local Miami News Feed</span>
           </a>
         </nav>
 
@@ -711,55 +755,61 @@
           Resident Resources &bull; 2415 &amp; 2475 NW 16th St Rd, Miami, FL 33125
         </p>
 
-        <!-- Chips -->
+        <!-- Chips linking directly to respective sections with clear descriptive names -->
         <div class="rrs-hero-chips">
-          <div class="rrs-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            <span data-i18n="chip_family">Family-Oriented Community</span>
-          </div>
-          <div class="rrs-chip">
+          <a href="#faqs" class="rrs-chip" title="View FAQs &amp; Community Rules">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <span data-i18n="chip_family" data-en="❓ Community FAQs &amp; Pet Guidelines">❓ Community FAQs &amp; Pet Guidelines</span>
+          </a>
+          <a href="#neighborhood" class="rrs-chip" title="Explore Nearby Amenities, Parks &amp; Pet Care">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span data-i18n="chip_city">City of Miami (Health District / Allapattah)</span>
-          </div>
-          <div class="rrs-chip">
+            <span data-i18n="chip_city" data-en="🗺️ Nearby Amenities &amp; Parks Guide">🗺️ Nearby Amenities &amp; Parks Guide</span>
+          </a>
+          <a href="#resident-directory" class="rrs-chip" title="View Resident Address Directory (174 Units)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></svg>
-            <span data-i18n="chip_units">174 Residential Units (Twin 6-Floor Towers)</span>
-          </div>
-          <div class="rrs-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 11.1 2 11.5 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
-            <span data-i18n="chip_parking">4-Level Structured Parking Deck &amp; Gated Security</span>
-          </div>
+            <span data-i18n="chip_units" data-en="🏢 Resident Address Directory (174 Units)">🏢 Resident Address Directory (174 Units)</span>
+          </a>
+          <a href="#deliveries" class="rrs-chip" title="View Security Gate, Delivery &amp; Building Navigation Guide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span data-i18n="chip_parking" data-en="🚚 Delivery Drivers &amp; Building Navigation">🚚 Delivery Drivers &amp; Building Navigation</span>
+          </a>
         </div>
 
         <!-- Operational Status Hub & Authentic WhatsApp Join Action -->
         <div class="rrs-hero-operational-grid" style="margin: 20px 0 10px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; width: 100%;">
           
-          <!-- Card 1: Gatehouse -->
-          <div style="background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: var(--rrs-radius-md); padding: 12px 16px; display: flex; align-items: center; gap: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.3);">
-            <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.4); display: flex; align-items: center; justify-content: center; color: #34D399; flex-shrink: 0;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <div>
-              <div style="font-size: 0.75rem; color: #94A3B8; text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em;">Gatehouse Security</div>
-              <div style="font-size: 0.92rem; font-weight: 800; color: #FFFFFF; display: flex; align-items: center; gap: 6px; margin-top: 1px;">
-                <span style="width: 7px; height: 7px; border-radius: 50%; background: #34D399; box-shadow: 0 0 8px #34D399;"></span>
-                <span>24/7 Guarded Gate</span>
+          <!-- Card 1: Gatehouse Security (Interactive Button Link) -->
+          <a href="#directory" class="rrs-hero-status-card-btn" title="View Security Gatehouse Directory &amp; Phone Contacts" style="background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.22); border-radius: var(--rrs-radius-md); padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.3); text-decoration: none; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer;">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.4); display: flex; align-items: center; justify-content: center; color: #34D399; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <div style="font-size: 0.75rem; color: #94A3B8; text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em;">Gatehouse Security</div>
+                <div style="font-size: 0.92rem; font-weight: 800; color: #FFFFFF; display: flex; align-items: center; gap: 6px; margin-top: 1px;">
+                  <span style="width: 7px; height: 7px; border-radius: 50%; background: #34D399; box-shadow: 0 0 8px #34D399;"></span>
+                  <span>24/7 Guarded Gate &rarr;</span>
+                </div>
               </div>
             </div>
-          </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" style="flex-shrink: 0;"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
 
-          <!-- Card 2: Trash & Bulk Pickup -->
-          <div style="background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: var(--rrs-radius-md); padding: 12px 16px; display: flex; align-items: center; gap: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.3);">
-            <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.4); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
-              🗑️
-            </div>
-            <div>
-              <div style="font-size: 0.75rem; color: #94A3B8; text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em;">Trash &amp; Bulk Pickup</div>
-              <div style="font-size: 0.88rem; font-weight: 800; color: #FDE68A; margin-top: 1px;">
-                Mon &amp; Thu &bull; <span style="color: #F59E0B;">Bulk Thu (Street)</span>
+          <!-- Card 2: Trash & Bulk Pickup (Interactive Button Link) -->
+          <a href="#trash-chutes" class="rrs-hero-status-card-btn" title="View Household Trash &amp; Bulk Pickup Guidelines" style="background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.22); border-radius: var(--rrs-radius-md); padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.3); text-decoration: none; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer;">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.4); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                🗑️
+              </div>
+              <div>
+                <div style="font-size: 0.75rem; color: #94A3B8; text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em;">Trash &amp; Bulk Pickup</div>
+                <div style="font-size: 0.88rem; font-weight: 800; color: #FDE68A; margin-top: 1px;">
+                  Mon &amp; Thu &bull; <span style="color: #F59E0B;">Bulk Rules &rarr;</span>
+                </div>
               </div>
             </div>
-          </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" style="flex-shrink: 0;"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
 
           <!-- Card 3: Real WhatsApp CTA Button -->
           <a href="https://chat.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="rrs-whatsapp-real-btn" style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); color: #FFFFFF; border-radius: var(--rrs-radius-md); padding: 12px 18px; display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; font-weight: 800; font-size: 0.95rem; box-shadow: 0 8px 22px rgba(37, 211, 102, 0.4); border: 1px solid rgba(255,255,255,0.3); transition: transform 0.2s ease, box-shadow 0.2s ease;">
@@ -837,11 +887,28 @@
               Everything for your residence in one portal! Remit monthly maintenance fee assessments via ACH or card, track real-time account ledgers, submit maintenance work orders, download official condominium governance documents (Declaration, By-laws, Financial Budgets, Meeting Minutes), and submit ARC renovation forms.
             </p>
 
-            <div style="display: flex; flex-wrap: wrap; gap: 10px; font-size: 0.84rem; color: #94A3B8; margin-bottom: 8px;">
-              <span style="background: rgba(255,255,255,0.06); padding: 5px 12px; border-radius: 9999px; border: 1px solid rgba(255,255,255,0.12); color: #F1F5F9;" data-i18n="owner_tag_payments">💳 Online HOA Payments (Free ACH)</span>
-              <span style="background: rgba(255,255,255,0.06); padding: 5px 12px; border-radius: 9999px; border: 1px solid rgba(255,255,255,0.12); color: #F1F5F9;" data-i18n="owner_tag_maint">🔧 Maintenance Work Orders</span>
-              <span style="background: rgba(255,255,255,0.06); padding: 5px 12px; border-radius: 9999px; border: 1px solid rgba(255,255,255,0.12); color: #F1F5F9;" data-i18n="owner_tag_docs">📁 Bylaws, Budgets &amp; SIRS Reserves</span>
-              <span style="background: rgba(255,255,255,0.06); padding: 5px 12px; border-radius: 9999px; border: 1px solid rgba(255,255,255,0.12); color: #F1F5F9;" data-i18n="owner_tag_arc">🏗️ Architectural ARC Reviews</span>
+            <div style="margin-bottom: 8px;">
+              <div style="font-size: 0.76rem; font-weight: 800; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;" data-i18n="owner_tags_label">
+                Quick Service Access (Click to open in AppFolio / Jump to Section):
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <a href="https://lpmservices.appfolio.com/connect/" target="_blank" rel="noopener noreferrer" class="rrs-appfolio-tag-link" title="Open AppFolio Online HOA Payments">
+                  <span data-i18n="owner_tag_payments">💳 Online HOA Payments (Free ACH)</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://lpmservices.appfolio.com/connect/" target="_blank" rel="noopener noreferrer" class="rrs-appfolio-tag-link" title="Submit Maintenance Work Order in AppFolio">
+                  <span data-i18n="owner_tag_maint">🔧 Maintenance Work Orders</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="#bylaws-master-full" class="rrs-appfolio-tag-link" title="View Official Governance Bylaws & Documents">
+                  <span data-i18n="owner_tag_docs">📁 Bylaws, Budgets &amp; SIRS Reserves</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </a>
+                <a href="https://lpmservices.appfolio.com/connect/" target="_blank" rel="noopener noreferrer" class="rrs-appfolio-tag-link" title="Submit Architectural ARC Review in AppFolio">
+                  <span data-i18n="owner_tag_arc">🏗️ Architectural ARC Reviews</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -2373,6 +2440,294 @@
               </div>
             </label>
           </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- DELIVERY DRIVERS, COURIERS & FREIGHT LOGISTICS (#deliveries) -->
+  <!-- ===================================================================== -->
+  <section class="rrs-section" id="deliveries" style="background: var(--rrs-bg-alt); border-top: 1px solid var(--rrs-border); border-bottom: 1px solid var(--rrs-border);">
+    <div class="rrs-container">
+      
+      <!-- Section Header -->
+      <div class="rrs-section-header rrs-reveal">
+        <span class="rrs-pill rrs-pill-gold" data-i18n="deliv_pill">🚚 Delivery Drivers &amp; Courier Logistics</span>
+        <h2 class="rrs-section-title">
+          <span data-i18n="deliv_title">Delivery Driver Guide &amp; Building Navigation</span>
+          <a href="#deliveries" class="rrs-anchor-link" data-anchor="deliveries" title="Copy link to this section" aria-label="Copy link to this section">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          </a>
+        </h2>
+        <p class="rrs-section-desc" data-i18n="deliv_desc">
+          Official access protocol, tower navigation, security gate check-in, and freight elevator requirements for package carriers (Amazon, UPS, FedEx, USPS), food couriers (DoorDash, UberEats, Instacart), and furniture/appliance movers delivering to 2415 &amp; 2475 NW 16th St Rd.
+        </p>
+      </div>
+
+      <!-- CRITICAL BUILDING ORIENTATION & TOWER SPLIT CARD -->
+      <div id="building-orientation" class="rrs-searchable rrs-reveal" data-keywords="2475 west left 2415 east right building orientation tower layout navigation street entrance gate directions" style="background: var(--rrs-bg-card); border: 2px solid var(--rrs-river-blue); border-radius: var(--rrs-radius-lg); padding: 26px; box-shadow: var(--rrs-shadow-md); margin-bottom: 28px;">
+        
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; border-bottom: 1.5px solid var(--rrs-border); padding-bottom: 14px;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="background: var(--rrs-river-blue); color: #FFFFFF; font-size: 0.76rem; font-weight: 800; padding: 3px 10px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 0.05em;">Street-Facing Landmark Guide</span>
+              <span style="font-size: 0.84rem; font-weight: 700; color: var(--rrs-text-muted);">Facing from NW 16th St Rd Entry</span>
+            </div>
+            <h3 style="font-size: 1.45rem; font-weight: 800; color: var(--rrs-text-heading); margin: 6px 0 2px;" data-i18n="deliv_orient_title">
+              Twin Tower Layout: 2475 on the LEFT (West) &bull; 2415 on the RIGHT (East)
+            </h3>
+            <p style="font-size: 0.92rem; color: var(--rrs-text); margin: 0;" data-i18n="deliv_orient_desc">
+              When entering through the security gate on NW 16th St Rd, the two residential towers sit opposite each other across the central palm courtyard.
+            </p>
+          </div>
+          <a href="#building-orientation" class="rrs-anchor-link" data-anchor="building-orientation" title="Copy link to building orientation" aria-label="Copy link to building orientation">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          </a>
+        </div>
+
+        <!-- 3-Column Visual Architecture Diagram -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 18px; align-items: stretch;">
+          
+          <!-- LEFT: 2475 WEST TOWER -->
+          <div style="background: var(--rrs-bg-subtle); border: 2px solid #0284C7; border-radius: var(--rrs-radius-md); padding: 20px; display: flex; flex-direction: column; position: relative;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+              <span style="background: #0284C7; color: #FFFFFF; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; text-transform: uppercase;">⬅️ LEFT SIDE &bull; WEST TOWER</span>
+              <span style="font-size: 0.8rem; font-weight: 800; color: #0284C7;">90 Units</span>
+            </div>
+            <h4 style="font-size: 1.3rem; font-weight: 800; color: var(--rrs-text-heading); margin: 0 0 4px;" data-i18n="deliv_bldg_2475_title">
+              Building 2475 NW 16th St Rd
+            </h4>
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--rrs-river-blue); margin-bottom: 10px;" data-i18n="deliv_bldg_2475_units">
+              Residences: Units 201–618 &amp; Ground Loft 101
+            </span>
+            <ul style="font-size: 0.86rem; color: var(--rrs-text); line-height: 1.6; margin: 0 0 16px 0; padding-left: 18px; flex: 1;">
+              <li><strong>Position:</strong> On your <strong>LEFT</strong> as you drive into the property (West wing toward the Miami River curve).</li>
+              <li><strong>Lobby Access:</strong> West entrance lobby with electronic telephone callbox directory.</li>
+              <li><strong>Loading Staging:</strong> 15-minute delivery drop-off zone located at the West building entrance circle.</li>
+            </ul>
+            <button type="button" class="rrs-btn rrs-btn-outline rrs-copy-address-btn" data-address="2475 NW 16th St Rd, Miami, FL 33125" style="width: 100%; justify-content: center; font-size: 0.82rem; padding: 9px 12px; font-weight: 700;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span data-i18n="deliv_btn_copy_2475">Copy 2475 Address for GPS</span>
+            </button>
+          </div>
+
+          <!-- CENTER: 24/7 GATED GUARDHOUSE -->
+          <div style="background: rgba(15, 23, 42, 0.05); border: 2px dashed var(--rrs-slate-blue); border-radius: var(--rrs-radius-md); padding: 20px; display: flex; flex-direction: column; text-align: center; justify-content: center; align-items: center;">
+            <div style="width: 52px; height: 52px; border-radius: 50%; background: #059669; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 10px; box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);">
+              🛡️
+            </div>
+            <span style="background: #059669; color: #FFFFFF; font-size: 0.72rem; font-weight: 800; padding: 3px 10px; border-radius: 9999px; text-transform: uppercase; margin-bottom: 6px;">
+              MANDATORY STOP &bull; ALL DRIVERS
+            </span>
+            <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--rrs-text-heading); margin: 0 0 6px;" data-i18n="deliv_gate_title">
+              Center Security Gatehouse
+            </h4>
+            <p style="font-size: 0.85rem; color: var(--rrs-text-muted); line-height: 1.5; margin: 0 0 14px;" data-i18n="deliv_gate_desc">
+              All delivery couriers (food, packages, freight) must pull into the <strong>RIGHT-HAND VISITOR LANE</strong> and check in with the officer. Never tailgate.
+            </p>
+            <a href="tel:3056354424" class="rrs-btn rrs-btn-primary" style="font-size: 0.82rem; padding: 9px 14px; width: 100%; justify-content: center;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Gate Phone: (305) 635-4424</span>
+            </a>
+          </div>
+
+          <!-- RIGHT: 2415 EAST TOWER -->
+          <div style="background: var(--rrs-bg-subtle); border: 2px solid #059669; border-radius: var(--rrs-radius-md); padding: 20px; display: flex; flex-direction: column; position: relative;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+              <span style="background: #059669; color: #FFFFFF; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; text-transform: uppercase;">➡️ RIGHT SIDE &bull; EAST TOWER</span>
+              <span style="font-size: 0.8rem; font-weight: 800; color: #059669;">84 Units</span>
+            </div>
+            <h4 style="font-size: 1.3rem; font-weight: 800; color: var(--rrs-text-heading); margin: 0 0 4px;" data-i18n="deliv_bldg_2415_title">
+              Building 2415 NW 16th St Rd
+            </h4>
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--rrs-sage-green); margin-bottom: 10px;" data-i18n="deliv_bldg_2415_units">
+              Residences: Units 201–616 &amp; Rowhouses 101–104
+            </span>
+            <ul style="font-size: 0.86rem; color: var(--rrs-text); line-height: 1.6; margin: 0 0 16px 0; padding-left: 18px; flex: 1;">
+              <li><strong>Position:</strong> On your <strong>RIGHT</strong> as you drive into the property (East wing toward NW 24th Ave).</li>
+              <li><strong>Lobby Access:</strong> East entrance lobby with electronic telephone callbox directory.</li>
+              <li><strong>Loading Staging:</strong> 15-minute delivery drop-off zone located at the East building entrance circle.</li>
+            </ul>
+            <button type="button" class="rrs-btn rrs-btn-outline rrs-copy-address-btn" data-address="2415 NW 16th St Rd, Miami, FL 33125" style="width: 100%; justify-content: center; font-size: 0.82rem; padding: 9px 12px; font-weight: 700;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span data-i18n="deliv_btn_copy_2415">Copy 2415 Address for GPS</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- MANDATORY CHECK-IN STEPS & ACCESS PROTOCOL -->
+      <div id="gate-checkin" class="rrs-reveal" style="margin-bottom: 30px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--rrs-text-heading); margin: 0; display: flex; align-items: center; gap: 8px;">
+            <span>🛡️</span> <span data-i18n="deliv_steps_title">Mandatory Security Gate Check-In Protocol for All Drivers</span>
+          </h3>
+          <a href="#gate-checkin" class="rrs-anchor-link" data-anchor="gate-checkin" title="Copy link to gate protocol" aria-label="Copy link to gate protocol">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          </a>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+          
+          <div class="rrs-searchable" data-keywords="right lane visitor lane check in security window stop" style="background: var(--rrs-bg-card); border: 1px solid var(--rrs-border); border-radius: var(--rrs-radius-md); padding: 18px;">
+            <div style="font-size: 1.5rem; margin-bottom: 8px;">🛑</div>
+            <strong style="font-size: 1rem; color: var(--rrs-text-heading); display: block; margin-bottom: 6px;" data-i18n="deliv_step1_t">1. Right-Hand Visitor Lane</strong>
+            <p style="font-size: 0.86rem; color: var(--rrs-text-muted); line-height: 1.5; margin: 0;" data-i18n="deliv_step1_d">
+              All courier vans, delivery cars, box trucks, and food drivers must enter via the right visitor lane and stop completely at the guardhouse window. Never use the left resident barcode lane.
+            </p>
+          </div>
+
+          <div class="rrs-searchable" data-keywords="unit number recipient delivery app order screen destination" style="background: var(--rrs-bg-card); border: 1px solid var(--rrs-border); border-radius: var(--rrs-radius-md); padding: 18px;">
+            <div style="font-size: 1.5rem; margin-bottom: 8px;">📋</div>
+            <strong style="font-size: 1rem; color: var(--rrs-text-heading); display: block; margin-bottom: 6px;" data-i18n="deliv_step2_t">2. State Unit &amp; Recipient</strong>
+            <p style="font-size: 0.86rem; color: var(--rrs-text-muted); line-height: 1.5; margin: 0;" data-i18n="deliv_step2_d">
+              Announce destination unit number, resident's name, and present courier identification or delivery app screen. The security officer logs arrival for resident protection and opens the gate.
+            </p>
+          </div>
+
+          <div class="rrs-searchable" data-keywords="no tailgating barrier arm damage liability gate closing" style="background: rgba(220, 38, 38, 0.05); border: 1.5px solid #EF4444; border-radius: var(--rrs-radius-md); padding: 18px;">
+            <div style="font-size: 1.5rem; margin-bottom: 8px;">🚫</div>
+            <strong style="font-size: 1rem; color: #DC2626; display: block; margin-bottom: 6px;" data-i18n="deliv_step3_t">3. Strict Zero Tailgating</strong>
+            <p style="font-size: 0.86rem; color: var(--rrs-text); line-height: 1.5; margin: 0;" data-i18n="deliv_step3_d">
+              Never follow closely behind another vehicle through the barrier. The automatic arm drops after every vehicle. Drivers/courier companies are strictly billed for gate damage and repair costs.
+            </p>
+          </div>
+
+          <div class="rrs-searchable" data-keywords="15 minute parking loading zone staging designated spaces towing" style="background: var(--rrs-bg-card); border: 1px solid var(--rrs-border); border-radius: var(--rrs-radius-md); padding: 18px;">
+            <div style="font-size: 1.5rem; margin-bottom: 8px;">⏱️</div>
+            <strong style="font-size: 1rem; color: var(--rrs-text-heading); display: block; margin-bottom: 6px;" data-i18n="deliv_step4_t">4. 15-Minute Staging Only</strong>
+            <p style="font-size: 0.86rem; color: var(--rrs-text-muted); line-height: 1.5; margin: 0;" data-i18n="deliv_step4_d">
+              Park only in designated yellow-marked delivery loading spaces or visitor bays. Never park in assigned numbered resident garage stalls or block fire lanes (vehicles are towed under F.S. § 715.07).
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- LARGE DELIVERIES, FURNITURE & APPLIANCES CARD (HIGH INTENT / HIGH COMPLIANCE) -->
+      <div id="large-deliveries" class="rrs-searchable rrs-reveal" data-keywords="large deliveries furniture appliance appliances refrigerator washer dryer mattress sofa authorization deposit security elevator padding freight moving monday friday hours" style="background: var(--rrs-bg-card); border: 2.5px solid #D97706; border-radius: var(--rrs-radius-lg); padding: 26px; box-shadow: var(--rrs-shadow-md); margin-bottom: 28px;">
+        
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 14px; margin-bottom: 18px; border-bottom: 1.5px solid rgba(217, 119, 6, 0.25); padding-bottom: 14px;">
+          <div>
+            <span style="background: #D97706; color: #FFFFFF; font-size: 0.74rem; font-weight: 800; padding: 4px 10px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="deliv_large_badge">
+              MANDATORY AUTHORIZATION &bull; SECURITY DEPOSIT &bull; ELEVATOR PADDING
+            </span>
+            <h3 style="font-size: 1.55rem; font-weight: 800; color: var(--rrs-text-heading); margin: 8px 0 4px;" data-i18n="deliv_large_title">
+              Large Deliveries, Appliances &amp; Furniture Protocol
+            </h3>
+            <p style="font-size: 0.94rem; color: var(--rrs-text); line-height: 1.5; margin: 0;" data-i18n="deliv_large_desc">
+              Deliveries of large appliances (refrigerators, washers, dryers, dishwashers, ovens) and heavy furniture (sofas, mattresses, bed sets, dining tables) require advance condominium authorization, security deposit, and mandatory elevator wall padding.
+            </p>
+          </div>
+          <a href="#large-deliveries" class="rrs-anchor-link" data-anchor="large-deliveries" title="Copy link to large deliveries protocol" aria-label="Copy link to large deliveries protocol">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          </a>
+        </div>
+
+        <!-- 4 Essential Large Delivery Rules Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 22px;">
+          
+          <div style="background: var(--rrs-bg-subtle); border-left: 4px solid #D97706; padding: 14px 16px; border-radius: var(--rrs-radius-sm);">
+            <strong style="color: #B45309; font-size: 0.95rem; display: block; margin-bottom: 4px;" data-i18n="deliv_large_rule1_t">
+              1. Prior Condo Authorization (48-Hr Notice)
+            </strong>
+            <span style="font-size: 0.86rem; color: var(--rrs-text); line-height: 1.5; display: block;" data-i18n="deliv_large_rule1_d">
+              Must be scheduled with Loyalty Property Management at least 48 hours in advance. Security guardhouse officers are instructed to turn away freight trucks without written authorization on file.
+            </span>
+          </div>
+
+          <div style="background: var(--rrs-bg-subtle); border-left: 4px solid #D97706; padding: 14px 16px; border-radius: var(--rrs-radius-sm);">
+            <strong style="color: #B45309; font-size: 0.95rem; display: block; margin-bottom: 4px;" data-i18n="deliv_large_rule2_t">
+              2. Refundable Security Deposit Required
+            </strong>
+            <span style="font-size: 0.86rem; color: var(--rrs-text); line-height: 1.5; display: block;" data-i18n="deliv_large_rule2_d">
+              A refundable common area damage deposit must be submitted to management before the delivery truck arrives to safeguard building doors, hallway drywall, and elevator finishes.
+            </span>
+          </div>
+
+          <div style="background: var(--rrs-bg-subtle); border-left: 4px solid #D97706; padding: 14px 16px; border-radius: var(--rrs-radius-sm);">
+            <strong style="color: #B45309; font-size: 0.95rem; display: block; margin-bottom: 4px;" data-i18n="deliv_large_rule3_t">
+              3. Mandatory Elevator Wall Padding Preparation
+            </strong>
+            <span style="font-size: 0.86rem; color: var(--rrs-text); line-height: 1.5; display: block;" data-i18n="deliv_large_rule3_d">
+              Maintenance staff MUST hang heavy quilted protective pads in the elevator cab BEFORE any appliances or furniture are transported. Using unpadded elevators will result in a $100 violation fine.
+            </span>
+          </div>
+
+          <div style="background: var(--rrs-bg-subtle); border-left: 4px solid #D97706; padding: 14px 16px; border-radius: var(--rrs-radius-sm);">
+            <strong style="color: #B45309; font-size: 0.95rem; display: block; margin-bottom: 4px;" data-i18n="deliv_large_rule4_t">
+              4. Permitted Hours: Mon–Fri 8:30 AM – 4:30 PM
+            </strong>
+            <span style="font-size: 0.86rem; color: var(--rrs-text); line-height: 1.5; display: block;" data-i18n="deliv_large_rule4_d">
+              Heavy deliveries and moving activities are strictly restricted to business weekdays only. Absolutely NO freight deliveries permitted on Saturdays, Sundays, or official legal holidays.
+            </span>
+          </div>
+
+        </div>
+
+        <!-- Action Call Bar -->
+        <div style="background: var(--rrs-bg-subtle); border: 1px solid var(--rrs-border); border-radius: var(--rrs-radius-md); padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="font-size: 1.6rem;">📞</div>
+            <div>
+              <strong style="font-size: 0.95rem; color: var(--rrs-text-heading); display: block;">Coordinate Elevator Booking &amp; Authorization:</strong>
+              <span style="font-size: 0.84rem; color: var(--rrs-text-muted);">Loyalty Property Management Office &bull; Mon–Fri 8:30 AM – 4:30 PM</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="tel:3059085644" class="rrs-btn rrs-btn-primary" style="font-size: 0.85rem; padding: 8px 16px;">
+              <span data-i18n="deliv_btn_call_office">Call Management: (305) 908-5644</span>
+            </a>
+            <button class="rrs-btn rrs-btn-outline rrs-protected-email-action" data-user="management" data-domain="lpmservices.info" data-subject="Elevator &amp; Large Delivery Authorization - River Run South" style="font-size: 0.85rem; padding: 8px 16px;">
+              <span>Email Authorization Request</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- QUICK COURIER & DRIVER FAQS -->
+      <div class="rrs-reveal" style="background: var(--rrs-bg-card); border: 1px solid var(--rrs-border); border-radius: var(--rrs-radius-lg); padding: 22px;">
+        <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--rrs-text-heading); margin: 0 0 14px 0; display: flex; align-items: center; gap: 8px;">
+          <span>❓</span> <span data-i18n="deliv_faq_title">Frequently Asked Questions for Drivers &amp; Couriers</span>
+        </h3>
+        
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          
+          <details class="rrs-showing-faq-item rrs-searchable" data-keywords="intercom callbox lobby door buzz resident telephone digital directory">
+            <summary class="rrs-showing-faq-summary">
+              <span data-i18n="deliv_faq_q1">How do delivery drivers contact residents at the tower lobby?</span>
+              <svg class="rrs-showing-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="rrs-showing-faq-answer" data-i18n="deliv_faq_a1">
+              At the front entrance of both Building 2475 (West) and Building 2415 (East), look up the unit number on the lobby intercom directory. Enter the designated 3-digit directory code to ring the resident's mobile phone directly. The resident can remotely buzz open the entrance door by pressing "9" on their keypad.
+            </div>
+          </details>
+
+          <details class="rrs-showing-faq-item rrs-searchable" data-keywords="height clearance garage parking deck clearance box truck vans 6 feet 8 inches">
+            <summary class="rrs-showing-faq-summary">
+              <span data-i18n="deliv_faq_q2">Can delivery trucks enter the covered multi-level parking garage?</span>
+              <svg class="rrs-showing-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="rrs-showing-faq-answer" data-i18n="deliv_faq_a2">
+              No. The 4-level parking structure has a strict maximum vertical ceiling clearance of <strong>6 feet 8 inches (2.03 meters)</strong>. High-roof commercial vans, cube box trucks, and flatbeds must remain in the surface ground loading lane by the tower lobbies and are strictly prohibited from driving up the parking ramp.
+            </div>
+          </details>
+
+          <details class="rrs-showing-faq-item rrs-searchable" data-keywords="package drop off amazon door doorstep vestibule packages unattended">
+            <summary class="rrs-showing-faq-summary">
+              <span data-i18n="deliv_faq_q3">Where should package carriers (Amazon, UPS, FedEx) leave parcels?</span>
+              <svg class="rrs-showing-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="rrs-showing-faq-answer" data-i18n="deliv_faq_a3">
+              Couriers must deliver parcels directly to the resident's unit doorway on their designated floor. Dumping packages in common lobby vestibules, elevator foyers, or the parking garage is strictly prohibited by condominium rules. For oversized parcels when the resident is not home, consult the guardhouse.
+            </div>
+          </details>
+
         </div>
       </div>
 
@@ -4568,6 +4923,7 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
             <li><a href="https://lpmservices.appfolio.com/connect/" target="_blank" rel="noopener noreferrer">AppFolio Resident Portal</a></li>
             <li><a href="#insurance" data-i18n="nav_insurance">Master Insurance Disclosures</a></li>
             <li><a href="#rules" data-i18n="nav_rules">Rules, Parking &amp; ARC</a></li>
+            <li><a href="#deliveries" data-i18n="nav_deliveries_footer">Delivery Drivers &amp; Freight</a></li>
             <li><a href="#news" data-i18n="nav_news">Local Miami News</a></li>
             <li><a href="#governance" data-i18n="nav_stats">Building Metrics &amp; Quorum</a></li>
           </ul>
@@ -4979,6 +5335,49 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
       "btn_toggle_faqs": "Mostrar las 15 Preguntas Frecuentes (+11 adicionales)",
       "btn_toggle_disclaimer": "⚖️ Ver Aviso Legal de Registros Públicos de Florida Cap. 718",
       "nav_portals": "Portales y AppFolio",
+      "nav_deliveries": "🚚 Guía de Repartidores y Orientación de Edificios",
+      "nav_deliveries_footer": "Repartidores y Mudanzas",
+      "deliv_pill": "🚚 Logística de Reparto y Acceso a Edificios",
+      "deliv_title": "Guía para Repartidores, Envíos y Cargas Pesadas",
+      "deliv_desc": "Instrucciones oficiales de acceso, orientación de torres, registro obligatorio en la garita de seguridad y requisitos para el ascensor de carga para paquetes (Amazon, UPS, FedEx, USPS), entregas de comida (UberEats, DoorDash) y mudanzas en 2415 & 2475 NW 16th St Rd.",
+      "deliv_orient_title": "Orientación de Torres: 2475 a la IZQUIERDA (Oeste) • 2415 a la DERECHA (Este)",
+      "deliv_orient_desc": "Al entrar por el portón de seguridad desde NW 16th St Rd, las dos torres residenciales se ubican una frente a otra a través del patio central de palmeras.",
+      "deliv_bldg_2475_title": "Edificio 2475 NW 16th St Rd",
+      "deliv_bldg_2475_units": "Residencias: Unidades 201–618 y Loft 101 en Planta Baja",
+      "deliv_bldg_2415_title": "Edificio 2415 NW 16th St Rd",
+      "deliv_bldg_2415_units": "Residencias: Unidades 201–616 y Townhomes 101–104",
+      "deliv_gate_title": "Garita Central de Seguridad",
+      "deliv_gate_desc": "Todos los repartidores (comida, paquetes, carga) deben ingresar por el CARRIL DERECHO DE VISITANTES y registrarse con el oficial. Prohibido pasar pegado a otro carro.",
+      "deliv_btn_copy_2475": "Copiar Dirección 2475 para GPS",
+      "deliv_btn_copy_2415": "Copiar Dirección 2415 para GPS",
+      "deliv_large_badge": "AUTORIZACIÓN OBLIGATORIA • DEPÓSITO Y PROTECTORES DE ASCENSOR",
+      "deliv_large_title": "Protocolo para Entregas Grandes, Muebles y Electrodomésticos",
+      "deliv_large_desc": "La entrega de electrodomésticos grandes (refrigeradores, lavadoras, secadoras, estufas) y muebles pesados (sofás, colchones, camas, mesas) requiere autorización previa de la administración, depósito de seguridad y colocación obligatoria de protectores en el ascensor.",
+      "deliv_large_rule1_t": "1. Autorización Previa (48 Horas de Anticipación)",
+      "deliv_large_rule1_d": "Debe coordinarse con Loyalty Property Management con al menos 48 horas de anticipación. Los guardias tienen orden de rechazar camiones de carga que no cuenten con autorización registrada.",
+      "deliv_large_rule2_t": "2. Depósito de Seguridad Reembolsable",
+      "deliv_large_rule2_d": "Se debe entregar un depósito reembolsable por posibles daños en áreas comunes antes de la llegada del camión para proteger puertas, pasillos y acabados del ascensor.",
+      "deliv_large_rule3_t": "3. Preparación Obligatoria de Almohadillas en el Ascensor",
+      "deliv_large_rule3_d": "El personal de mantenimiento DEBE colgar las colchas protectoras acolchadas en el ascensor ANTES de subir cualquier electrodoméstico o mueble. Subir muebles sin protectores conlleva una multa automática de $100.",
+      "deliv_large_rule4_t": "4. Horarios Permitidos: Lunes a Viernes de 8:30 AM a 4:30 PM",
+      "deliv_large_rule4_d": "Las entregas pesadas y mudanzas están estrictamente restringidas a días laborables entre semana. NO se permiten entregas de carga los sábados, domingos ni días feriados oficiales.",
+      "deliv_steps_title": "Protocolo de Registro en la Garita para Todos los Conductores",
+      "deliv_step1_t": "1. Carril Derecho de Visitantes",
+      "deliv_step1_d": "Furgonetas, camiones y repartidores de comida deben ingresar por el carril derecho y detenerse por completo ante la ventanilla del guardia. Nunca use el carril izquierdo de residentes.",
+      "deliv_step2_t": "2. Indicar Unidad y Destinatario",
+      "deliv_step2_d": "Indique el número de apartamento, nombre del residente y muestre su orden en la aplicación móvil o identificación de repartidor. El guardia registra la visita y abre el portón.",
+      "deliv_step3_t": "3. Prohibido Seguir a Otro Vehículo (Cero Tailgating)",
+      "deliv_step3_d": "Nunca pase pegado detrás de otro vehículo. La barrera baja inmediatamente después de cada carro. La empresa de entregas o conductor será multado y cobrará los daños a la barrera.",
+      "deliv_step4_t": "4. Zona de Carga: Máximo 15 Minutos",
+      "deliv_step4_d": "Estacione solo en los espacios amarillos temporales de carga frente a cada torre. Nunca ocupe puestos numerados de residentes ni bloquee vías de bomberos (remolque inmediato por grúa).",
+      "deliv_faq_title": "Preguntas Frecuentes para Mensajeros y Conductores",
+      "deliv_faq_q1": "¿Cómo se contacta a los residentes desde el vestíbulo de la torre?",
+      "deliv_faq_a1": "En la entrada de cada edificio (2475 Oeste o 2415 Este) use el intercomunicador digital marcando el código de la unidad para llamar al teléfono del residente. El residente abrirá presionando el '9'.",
+      "deliv_faq_q2": "¿Pueden los camiones de reparto entrar al garaje cubierto de 4 niveles?",
+      "deliv_faq_a2": "No. El garaje tiene un gálibo máximo de altura de 6 pies 8 pulgadas (2.03 m). Furgonetas altas y camiones deben permanecer en la zona de carga de superficie frente a las torres.",
+      "deliv_faq_q3": "¿Dónde deben dejar los paquetes las empresas de mensajería (Amazon, UPS, FedEx)?",
+      "deliv_faq_a3": "Los paquetes deben entregarse en la puerta del apartamento en su piso correspondiente. Está prohibido dejar paquetes tirados en vestíbulos o en el garaje.",
+      "deliv_btn_call_office": "Llamar a la Administración: (305) 908-5644",
       "nav_marina": "⛵ Marina",
       "nav_marina_mobile": "Marina y Muelles de Barcos (Entidad Independiente)",
       "nav_faqs": "Preguntas Frecuentes",
@@ -4998,16 +5397,19 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
       "hero_badge": "Vida Familiar Frente al Agua en el Histórico Río Miami",
       "hero_title": "River Run South Condominium",
       "hero_sub": "Recursos para Residentes &bull; 2415 &amp; 2475 NW 16th St Rd, Miami, FL 33125",
-      "chip_family": "Comunidad Familiar",
-      "chip_city": "Ciudad de Miami (Distrito de la Salud / Allapattah)",
-      "chip_units": "174 Unidades Residenciales (Torres Gemelas de 6 Pisos)",
-      "chip_parking": "Garaje Cubierto de 4 Niveles",
+      "chip_family": "❓ Preguntas Frecuentes y Reglas",
+      "chip_city": "🗺️ Guía del Vecindario y Parques",
+      "chip_units": "🏢 Directorio de Residentes (174 Unidades)",
+      "chip_parking": "🚚 Guía de Entregas y Navegación",
       "appfolio_card_title": "Portal de Residentes Todo en Uno (AppFolio)",
       "appfolio_desc": "¡Todo para su residencia en un solo portal! Pague las cuotas mensuales de mantenimiento por ACH o tarjeta, consulte sus estados de cuenta en tiempo real, envíe órdenes de trabajo de mantenimiento, descargue documentos oficiales de gobernanza y envíe formularios de remodelación ARC.",
       "portals_pill": "Portal Oficial de Residentes",
       "portals_title": "Portal Oficial de Residentes AppFolio",
       "portals_desc": "AppFolio es el portal oficial en la nube para que los residentes de River Run South realicen pagos de HOA, envíen solicitudes de mantenimiento, consulten presupuestos financieros y descarguen documentos de gobernanza.",
       "owner_badge": "LOYALTY PROPERTY MANAGEMENT SERVICES, INC. &bull; PORTAL OFICIAL",
+      "read_more": "... Leer más",
+      "read_less": "Mostrar menos",
+      "owner_tags_label": "Servicios Directos (Haga clic para abrir en AppFolio / ir a la sección):",
       "owner_tag_payments": "💳 Pagos HOA En Línea (ACH Gratis)",
       "owner_tag_maint": "🔧 Órdenes de Mantenimiento",
       "owner_tag_docs": "📁 Estatutos, Presupuestos y Reservas SIRS",
@@ -5582,6 +5984,11 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
       bttBtn.setAttribute('title', topTitle);
       bttBtn.setAttribute('aria-label', topTitle);
     }
+
+    // Recalculate 5-row text clamping when language changes
+    if (typeof rrsAutoClampText === 'function') {
+      setTimeout(rrsAutoClampText, 50);
+    }
   }
 
   function toggleLanguage() {
@@ -5718,6 +6125,194 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
       }, 400);
     }
   }
+
+  // REACTIVE 5-ROW PARAGRAPH & TEXT CLAMPING ENGINE
+  function rrsAutoClampText() {
+    const candidateSelectors = [
+      '#rrs-portal-root p',
+      '#rrs-portal-root .rrs-section-desc',
+      '#rrs-portal-root .rrs-showing-faq-answer',
+      '#rrs-portal-root .rrs-logo-hover-desc',
+      '#rrs-portal-root .rrs-gateway-desc',
+      '#rrs-portal-root .rrs-acc-content p',
+      '#rrs-portal-root .rrs-owner-card p',
+      '#rrs-portal-root .rrs-searchable p',
+      '#rrs-portal-root .rrs-img-card-sub',
+      '#rrs-portal-root .rrs-amenity-desc',
+      '#rrs-portal-root .rrs-market-desc',
+      '#rrs-portal-root .rrs-realtor-card-body',
+      '#rrs-portal-root .rrs-realtor-intro-body p',
+      '#rrs-portal-root .rrs-mls-text-box',
+      '#rrs-portal-root .rrs-rule-desc',
+      '#rrs-portal-root .rrs-rule-do',
+      '#rrs-portal-root .rrs-rule-dont',
+      '#rrs-portal-root .rrs-penalty-box',
+      '#rrs-portal-root .rrs-faq-answer p',
+      '#rrs-portal-root .rrs-news-snippet',
+      '#rrs-portal-root .rrs-disclaimer-text',
+      '#rrs-portal-root .rrs-card-desc',
+      '#rrs-portal-root .rrs-hero-desc'
+    ];
+
+    const elements = document.querySelectorAll(candidateSelectors.join(', '));
+    const isEs = (typeof currentLang !== 'undefined' && currentLang === 'es');
+    const portalRoot = document.getElementById('rrs-portal-root');
+
+    elements.forEach(el => {
+      // Exclude buttons, links, read-more badges, or elements with explicit no-clamp class
+      if (el.closest('button') || el.closest('a') || el.classList.contains('rrs-no-clamp') || el.classList.contains('rrs-read-more-badge')) return;
+
+      // Clean up any sibling badge left over from previous version
+      if (el.nextElementSibling && el.nextElementSibling.classList.contains('rrs-read-more-badge')) {
+        el.nextElementSibling.remove();
+      }
+
+      // Exclude very short text elements (under 20 chars)
+      const rawText = el.textContent.replace(/\.\.\.\s*(Read more|Leer más|Show less|Mostrar menos)/gi, '').trim();
+      if (rawText.length < 20) return;
+
+      // Check current expansion state
+      const wasExpanded = el.classList.contains('rrs-expanded-text');
+
+      // Determine 5-line max height threshold
+      const compStyle = window.getComputedStyle(el);
+      let lh = parseFloat(compStyle.lineHeight);
+      if (isNaN(lh) || lh <= 0) {
+        lh = (parseFloat(compStyle.fontSize) || 16) * 1.5;
+      }
+      const maxHeight5Lines = lh * 5;
+
+      let overflows = false;
+
+      if (el.offsetParent !== null && el.clientWidth > 0) {
+        // Unclamp briefly to measure full natural scrollHeight
+        const prevMaxH = el.style.maxHeight;
+        const prevOverflow = el.style.overflow;
+
+        el.style.maxHeight = 'none';
+        el.style.overflow = 'visible';
+
+        // Subtract height of existing badge if already inside
+        let existingBtn = el.querySelector('.rrs-read-more-badge');
+        let btnH = existingBtn ? (existingBtn.offsetHeight || 22) : 0;
+
+        overflows = (el.scrollHeight - btnH) > (maxHeight5Lines + 1);
+
+        // Restore inline styles
+        el.style.maxHeight = prevMaxH;
+        el.style.overflow = prevOverflow;
+      } else {
+        // Offscreen clone measurement for hidden elements (inside collapsed trays/accordions)
+        let containerWidth = 600;
+        if (portalRoot && portalRoot.clientWidth > 0) {
+          containerWidth = Math.min(portalRoot.clientWidth - 48, 800);
+        }
+
+        const clone = el.cloneNode(true);
+        const existingBtn = clone.querySelector('.rrs-read-more-badge');
+        if (existingBtn) existingBtn.remove();
+
+        clone.style.cssText = `
+          position: absolute !important;
+          visibility: hidden !important;
+          top: -9999px !important;
+          left: -9999px !important;
+          width: ${containerWidth}px !important;
+          display: block !important;
+          height: auto !important;
+          max-height: none !important;
+          font-size: ${compStyle.fontSize || '16px'} !important;
+          line-height: ${compStyle.lineHeight || '1.5'} !important;
+          font-family: ${compStyle.fontFamily || 'sans-serif'} !important;
+        `;
+
+        document.body.appendChild(clone);
+        overflows = clone.scrollHeight > (maxHeight5Lines + 1);
+        document.body.removeChild(clone);
+      }
+
+      // Check for existing child button INSIDE el
+      let btn = el.querySelector('.rrs-read-more-badge');
+
+      if (overflows) {
+        el.style.setProperty('--rrs-lh', lh + 'px');
+
+        if (wasExpanded) {
+          el.classList.add('rrs-clamped-5', 'rrs-expanded-text');
+        } else {
+          el.classList.add('rrs-clamped-5');
+          el.classList.remove('rrs-expanded-text');
+        }
+
+        if (!btn) {
+          btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'rrs-read-more-badge';
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const isExpNow = el.classList.toggle('rrs-expanded-text');
+            this.setAttribute('aria-expanded', isExpNow ? 'true' : 'false');
+            const isEsNow = (typeof currentLang !== 'undefined' && currentLang === 'es');
+            const lbl = this.querySelector('.rrs-rm-lbl');
+            if (lbl) {
+              lbl.textContent = isExpNow
+                ? (isEsNow ? 'Mostrar menos' : 'Show less')
+                : (isEsNow ? '... Leer más' : '... Read more');
+            }
+          });
+
+          el.appendChild(btn);
+        }
+
+        const isExpNow = el.classList.contains('rrs-expanded-text');
+        btn.innerHTML = `<span class="rrs-rm-lbl">${isExpNow ? (isEs ? 'Mostrar menos' : 'Show less') : (isEs ? '... Leer más' : '... Read more')}</span>`;
+        btn.style.display = 'inline-flex';
+
+      } else {
+        el.classList.remove('rrs-clamped-5', 'rrs-expanded-text');
+        if (btn) {
+          btn.remove();
+        }
+      }
+    });
+  }
+
+  // Initial auto clamp calls
+  setTimeout(rrsAutoClampText, 50);
+  setTimeout(rrsAutoClampText, 250);
+  setTimeout(rrsAutoClampText, 800);
+  window.addEventListener('load', rrsAutoClampText);
+  if ('fonts' in document) {
+    document.fonts.ready.then(rrsAutoClampText);
+  }
+
+  // Reactive Debounced Resize Listener
+  let clampResizeTimer = null;
+  window.addEventListener('resize', function() {
+    if (clampResizeTimer) clearTimeout(clampResizeTimer);
+    clampResizeTimer = setTimeout(rrsAutoClampText, 150);
+  }, { passive: true });
+
+  // Re-run auto clamp whenever accordions or collapsibles expand
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('.rrs-acc-btn, .rrs-disclosure-btn, .rrs-showing-faq-summary, [data-group]')) {
+      setTimeout(rrsAutoClampText, 100);
+      setTimeout(rrsAutoClampText, 350);
+    }
+  });
+
+  // Global Interactive Badge Click Handler for Section Pills and Badges
+  document.addEventListener('click', function(e) {
+    const pill = e.target.closest('.rrs-pill, .rrs-badge-hero, .rrs-owner-badge');
+    if (pill && !e.target.closest('a') && !e.target.closest('button')) {
+      const section = pill.closest('section') || pill.closest('[id]');
+      if (section && section.id) {
+        navigateToAnchor(section.id, true);
+      }
+    }
+  });
 
   // 4. Email Revealer & Mailto Dispatcher
   // Emails are never stored in raw plaintext in HTML!
@@ -8198,45 +8793,293 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
   setupCopyButton('rrs-copy-sale-btn', 'rrs-mls-sale-text');
   setupCopyButton('rrs-copy-rent-btn', 'rrs-mls-rent-text');
 
-  // 17. WhatsApp Native Share API & Fallback Handler
-  function fallbackWhatsAppShare() {
-    const message = encodeURIComponent("Check out the River Run South resident portal (rules, AppFolio, gatehouse contacts): https://river-run-south-condo.pages.dev/");
-    window.open(`https://api.whatsapp.com/send?text=${message}`, '_blank', 'noopener,noreferrer');
-  }
-
-  const shareTriggers = document.querySelectorAll('#rrs-whatsapp-share-btn, .rrs-whatsapp-share-trigger');
-  shareTriggers.forEach(btn => {
-    btn.addEventListener('click', async () => {
-      const shareData = {
-        title: 'River Run South Condominium Portal',
-        text: 'Check out the River Run South resident portal for community rules, AppFolio login, and emergency contacts:',
-        url: 'https://river-run-south-condo.pages.dev/'
+  // 16.1 Copy Building Address for Delivery Drivers
+  const copyAddressBtns = document.querySelectorAll('.rrs-copy-address-btn');
+  copyAddressBtns.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const addr = this.getAttribute('data-address');
+      if (!addr) return;
+      const isEs = (typeof currentLang !== 'undefined' && currentLang === 'es');
+      const onSuccess = () => {
+        if (anchorToastText) {
+          anchorToastText.textContent = isEs
+            ? `¡Dirección copiada: ${addr}!`
+            : `Address copied: ${addr}!`;
+        }
+        if (typeof showAnchorToast === 'function') {
+          showAnchorToast();
+        }
       };
 
-      if (navigator.share && navigator.canShare && navigator.canShare(shareData)) {
-        try {
-          await navigator.share(shareData);
-        } catch (err) {
-          if (err.name !== 'AbortError') {
-            fallbackWhatsAppShare();
-          }
-        }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(addr).then(onSuccess).catch(() => {
+          fallbackCopyText(addr, onSuccess);
+        });
       } else {
-        fallbackWhatsAppShare();
+        fallbackCopyText(addr, onSuccess);
       }
     });
+  });
+
+  // 17. Universal Multi-Platform Social Share Modal Logic
+  const shareUrl = 'https://river-run-south-condo.pages.dev/';
+  const shareTitleEN = 'River Run South Condominium • Community Resource Portal';
+  const shareTitleES = 'River Run South Condominium • Portal de Recursos Comunitarios';
+  const shareTextEN = 'Check out the official River Run South resident portal (rules, AppFolio access, gatehouse contacts, parking & disclosures):';
+  const shareTextES = 'Consulte el portal oficial de residentes de River Run South (normas, acceso a AppFolio, garita y contactos):';
+
+  function updateShareLinks() {
+    const shareModalTitle = document.getElementById('rrs-share-modal-title');
+    const shareModalDesc = document.getElementById('rrs-share-modal-desc');
+    const isEs = (typeof currentLang !== 'undefined' && currentLang === 'es');
+    const text = isEs ? shareTextES : shareTextEN;
+    const title = isEs ? shareTitleES : shareTitleEN;
+
+    if (shareModalTitle) {
+      shareModalTitle.textContent = isEs ? 'Compartir Portal de River Run South' : 'Share River Run South Portal';
+    }
+    if (shareModalDesc) {
+      shareModalDesc.textContent = isEs
+        ? 'Elija su plataforma preferida para compartir las normas, acceso a AppFolio o contactos con vecinos, familiares o agentes:'
+        : 'Select your favorite platform to share community rules, AppFolio access, or gate contacts with neighbors, family, or realtors:';
+    }
+
+    const encodedUrl = encodeURIComponent(shareUrl);
+    const encodedText = encodeURIComponent(`${text} ${shareUrl}`);
+
+    const whatsappBtn = document.getElementById('rrs-share-whatsapp');
+    if (whatsappBtn) whatsappBtn.href = `https://api.whatsapp.com/send?text=${encodedText}`;
+
+    const facebookBtn = document.getElementById('rrs-share-facebook');
+    if (facebookBtn) facebookBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+
+    const twitterBtn = document.getElementById('rrs-share-twitter');
+    if (twitterBtn) twitterBtn.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodedUrl}`;
+
+    const linkedinBtn = document.getElementById('rrs-share-linkedin');
+    if (linkedinBtn) linkedinBtn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+
+    const smsBtn = document.getElementById('rrs-share-sms');
+    if (smsBtn) smsBtn.href = `sms:?&body=${encodedText}`;
+
+    const emailBtn = document.getElementById('rrs-share-email');
+    if (emailBtn) emailBtn.href = `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(`${text}\n\n${shareUrl}`)}`;
+  }
+
+  function openShareModal() {
+    try {
+      updateShareLinks();
+    } catch (err) {}
+
+    const modal = document.getElementById('rrs-share-modal');
+    if (modal) {
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      modal.style.opacity = '1';
+      modal.style.visibility = 'visible';
+      modal.style.pointerEvents = 'auto';
+      document.body.style.overflow = 'hidden';
+    }
+
+    const nativeWrap = document.getElementById('rrs-share-native-wrap');
+    if (nativeWrap) {
+      try {
+        const shareData = { title: shareTitleEN, text: shareTextEN, url: shareUrl };
+        if (navigator.share && navigator.canShare && navigator.canShare(shareData)) {
+          nativeWrap.style.display = 'block';
+        } else {
+          nativeWrap.style.display = 'none';
+        }
+      } catch (err) {
+        nativeWrap.style.display = 'none';
+      }
+    }
+  }
+
+  function closeShareModal() {
+    const modal = document.getElementById('rrs-share-modal');
+    if (modal) {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      modal.style.opacity = '';
+      modal.style.visibility = '';
+      modal.style.pointerEvents = '';
+      document.body.style.overflow = '';
+    }
+  }
+
+  window.openShareModal = openShareModal;
+  window.closeShareModal = closeShareModal;
+
+  document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('#rrs-universal-share-btn, .rrs-universal-share-trigger, #rrs-whatsapp-share-btn, .rrs-whatsapp-share-trigger');
+    if (trigger) {
+      e.preventDefault();
+      openShareModal();
+      return;
+    }
+
+    const closeBtn = e.target.closest('#rrs-share-modal-close-btn, #rrs-share-modal-close-backdrop');
+    if (closeBtn) {
+      e.preventDefault();
+      closeShareModal();
+      return;
+    }
+
+    const nativeBtn = e.target.closest('#rrs-native-share-trigger-btn');
+    if (nativeBtn) {
+      e.preventDefault();
+      const isEs = (typeof currentLang !== 'undefined' && currentLang === 'es');
+      const shareData = {
+        title: isEs ? shareTitleES : shareTitleEN,
+        text: isEs ? shareTextES : shareTextEN,
+        url: shareUrl
+      };
+      if (navigator.share) {
+        navigator.share(shareData).then(() => closeShareModal()).catch(() => {});
+      }
+      return;
+    }
+
+    const copyBtn = e.target.closest('#rrs-share-copy-btn');
+    if (copyBtn) {
+      e.preventDefault();
+      const shareLinkInput = document.getElementById('rrs-share-link-input');
+      const shareCopyBtnText = document.getElementById('rrs-share-copy-btn-text');
+      const linkText = shareLinkInput ? shareLinkInput.value : shareUrl;
+      const isEs = (typeof currentLang !== 'undefined' && currentLang === 'es');
+
+      const onSuccess = () => {
+        copyBtn.classList.add('copied');
+        if (shareCopyBtnText) shareCopyBtnText.textContent = isEs ? '¡Copiado!' : '✓ Link Copied!';
+        if (typeof showAnchorToast === 'function') {
+          showAnchorToast();
+        }
+        setTimeout(() => {
+          copyBtn.classList.remove('copied');
+          if (shareCopyBtnText) shareCopyBtnText.textContent = isEs ? 'Copiar Enlace' : 'Copy Link';
+        }, 2500);
+      };
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(linkText).then(onSuccess).catch(() => {
+          if (typeof fallbackCopyText === 'function') fallbackCopyText(linkText, onSuccess);
+        });
+      } else if (typeof fallbackCopyText === 'function') {
+        fallbackCopyText(linkText, onSuccess);
+      }
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeShareModal();
+    }
   });
 
 })();
 </script>
 
-<!-- Floating Persistent WhatsApp Share Action Button -->
-<button type="button" class="rrs-whatsapp-floating-btn rrs-whatsapp-share-trigger" aria-label="Share community portal on WhatsApp" title="Share with Neighbors on WhatsApp">
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+<!-- Floating Persistent Social Share Button -->
+<button type="button" id="rrs-universal-share-btn" class="rrs-universal-floating-btn rrs-universal-share-trigger" onclick="openShareModal()" aria-label="Share community portal across social media" title="Share Portal with Neighbors & Friends">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="18" cy="5" r="3"/>
+    <circle cx="6" cy="12" r="3"/>
+    <circle cx="18" cy="19" r="3"/>
+    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
   </svg>
-  <span>Share Portal</span>
 </button>
+
+<!-- Universal Multi-Platform Social Share Modal -->
+<div id="rrs-share-modal" class="rrs-share-modal" aria-hidden="true" role="dialog" aria-labelledby="rrs-share-modal-title">
+  <div class="rrs-share-modal-backdrop" id="rrs-share-modal-close-backdrop"></div>
+  <div class="rrs-share-modal-card">
+    <button type="button" class="rrs-share-modal-close" id="rrs-share-modal-close-btn" aria-label="Close share dialog">&times;</button>
+    
+    <div class="rrs-share-modal-header">
+      <div class="rrs-share-modal-icon-badge">
+        <span style="font-size: 1.4rem;">📲</span>
+      </div>
+      <div>
+        <h3 id="rrs-share-modal-title">Share River Run South Portal</h3>
+      </div>
+    </div>
+
+    <!-- Multi-Platform Social Grid -->
+    <div class="rrs-share-platforms-grid">
+      <!-- WhatsApp -->
+      <a href="#" id="rrs-share-whatsapp" target="_blank" rel="noopener noreferrer" class="rrs-share-platform-btn rrs-share-whatsapp-btn">
+        <div class="rrs-share-platform-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+        </div>
+        <span>WhatsApp</span>
+      </a>
+
+      <!-- Facebook -->
+      <a href="#" id="rrs-share-facebook" target="_blank" rel="noopener noreferrer" class="rrs-share-platform-btn rrs-share-facebook-btn">
+        <div class="rrs-share-platform-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </div>
+        <span>Facebook</span>
+      </a>
+
+      <!-- X / Twitter -->
+      <a href="#" id="rrs-share-twitter" target="_blank" rel="noopener noreferrer" class="rrs-share-platform-btn rrs-share-x-btn">
+        <div class="rrs-share-platform-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </div>
+        <span>X (Twitter)</span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="#" id="rrs-share-linkedin" target="_blank" rel="noopener noreferrer" class="rrs-share-platform-btn rrs-share-linkedin-btn">
+        <div class="rrs-share-platform-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+          </svg>
+        </div>
+        <span>LinkedIn</span>
+      </a>
+
+      <!-- iMessage / SMS -->
+      <a href="#" id="rrs-share-sms" class="rrs-share-platform-btn rrs-share-sms-btn">
+        <div class="rrs-share-platform-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </div>
+        <span>iMessage / SMS</span>
+      </a>
+
+      <!-- Email -->
+      <a href="#" id="rrs-share-email" class="rrs-share-platform-btn rrs-share-email-btn">
+        <div class="rrs-share-platform-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </div>
+        <span>Email</span>
+      </a>
+    </div>
+
+    <!-- Copy Direct Link Box -->
+    <div class="rrs-share-copy-box">
+      <input type="text" id="rrs-share-link-input" readonly value="https://river-run-south-condo.pages.dev/" />
+      <button type="button" id="rrs-share-copy-btn" class="rrs-share-copy-btn">
+        <span id="rrs-share-copy-btn-text">Copy Link</span>
+      </button>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
