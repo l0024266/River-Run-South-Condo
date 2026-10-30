@@ -4784,24 +4784,16 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
           <p class="rrs-plan-modal-subtitle" id="rrs-plan-modal-subtitle">2 Bed / 2 Bath &bull; 925 Sq Ft Living Area &bull; Floor 4 &bull; Undivided Share: 0.5747%</p>
         </div>
         <div class="rrs-plan-modal-actions">
-          <button type="button" class="rrs-plan-btn-action" id="rrs-plan-print-btn" title="Print Architectural Spec Sheet or Save as PDF">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-            <span data-i18n="addr_plan_print">Print / PDF</span>
-          </button>
           <button type="button" class="rrs-plan-modal-close" id="rrs-plan-close-btn" aria-label="Close floor plan viewer">&times;</button>
         </div>
       </div>
 
-      <!-- Navigation Tabs -->
-      <div class="rrs-plan-tabs">
-        <button type="button" class="rrs-plan-tab-btn active" id="rrs-plan-tab-layout">
+      <!-- Navigation Bar Header -->
+      <div class="rrs-plan-tabs" style="border-bottom: 1px solid var(--rrs-border); padding-bottom: 8px;">
+        <div class="rrs-plan-tab-btn active" style="cursor: default; pointer-events: none;">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9M15 9v12"/></svg>
-          <span data-i18n="addr_plan_tab_layout">Unit Architectural Blueprint</span>
-        </button>
-        <button type="button" class="rrs-plan-tab-btn" id="rrs-plan-tab-survey">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
-          <span data-i18n="addr_plan_tab_survey">Recorded Building Plat &amp; Survey</span>
-        </button>
+          <span data-i18n="addr_plan_tab_layout">Unit Architectural Blueprint Layout (Developer Public Records)</span>
+        </div>
       </div>
 
       <!-- Modal Body -->
@@ -4810,19 +4802,6 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
         <div class="rrs-plan-graphic-area" id="rrs-plan-graphic-area">
           <div class="rrs-plan-svg-container" id="rrs-plan-svg-container">
             <!-- SVG rendered dynamically -->
-          </div>
-
-          <div class="rrs-plan-survey-container" id="rrs-plan-survey-container" style="display: none;">
-            <div class="rrs-plan-survey-sub">
-              <span>Official Condominium Plat Book 161, Page 61 &bull; Miami-Dade County Records</span>
-              <div style="display: flex; gap: 8px;">
-                <button type="button" id="rrs-plan-survey-toggle-doc" style="background: rgba(255,255,255,0.15); border: none; color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 0.72rem; cursor: pointer; font-weight: 700;">Switch: Site Plat / Tower Layout</button>
-                <a id="rrs-plan-survey-ext-link" href="media/Screenshot 2026-10-10 120928.png" target="_blank" rel="noopener noreferrer" class="rrs-plan-ext-link">Full Image &nearr;</a>
-              </div>
-            </div>
-            <div class="rrs-plan-survey-img-wrap">
-              <img id="rrs-plan-survey-img" src="media/Screenshot 2026-10-10 120928.png" alt="Recorded Condominium Building Plat" loading="lazy" onerror="this.onerror=null;this.src='/public/media/Screenshot 2026-10-10 120928.png';" />
-            </div>
           </div>
         </div>
 
@@ -6877,7 +6856,7 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
         layoutType: sm.type,
         pct: '0.5747%',
         folio: `01-3134-121-${String(fCount).padStart(4, '0')}`,
-        permits: '40-Yr Milestone Recertified • Life Safety Current • HVHZ'
+        sourceNote: 'Extracted from developer public records (Declaration Exhibit A)'
       });
       fCount += 10;
     }
@@ -6899,7 +6878,7 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
       layoutType: sm.type,
       pct: '0.5747%',
       folio: `01-3134-121-${String(fCount).padStart(4, '0')}`,
-      permits: '40-Yr Milestone Recertified • Life Safety Current • HVHZ'
+      sourceNote: 'Extracted from developer public records (Declaration Exhibit A)'
     });
     fCount += 10;
   }
@@ -6921,7 +6900,7 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
         layoutType: sm.type,
         pct: '0.5747%',
         folio: `01-3134-121-${String(fCount).padStart(4, '0')}`,
-        permits: '40-Yr Milestone Recertified • Life Safety Current • HVHZ'
+        sourceNote: 'Extracted from developer public records (Declaration Exhibit A)'
       });
       fCount += 10;
     }
@@ -6943,7 +6922,7 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
       layoutType: 'townhome',
       pct: '0.5747%',
       folio: `01-3134-121-${String(fCount).padStart(4, '0')}`,
-      permits: '40-Yr Milestone Recertified • Fire Sprinklers • HVHZ Gables'
+      sourceNote: 'Extracted from developer public records (Declaration Exhibit A)'
     });
     fCount += 10;
   });
@@ -6966,7 +6945,7 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
         layoutType: sm.type,
         pct: '0.5747%',
         folio: `01-3134-121-${String(fCount).padStart(4, '0')}`,
-        permits: '40-Yr Milestone Recertified • Life Safety Current • HVHZ'
+        sourceNote: 'Extracted from developer public records (Declaration Exhibit A)'
       });
       fCount += 10;
     }
@@ -6986,7 +6965,7 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
     layoutType: '2bed',
     pct: '0.5747%',
     folio: `01-3134-121-${String(fCount).padStart(4, '0')}`,
-    permits: '40-Yr Milestone Recertified • Elevated Grade AE • HVHZ'
+    sourceNote: 'Extracted from developer public records (Declaration Exhibit A)'
   });
 
   function renderDirectory() {
@@ -7084,9 +7063,11 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
               </div>
             </div>
 
-            <div style="font-size: 0.74rem; color: var(--rrs-text-muted); background: var(--rrs-bg-subtle); padding: 6px 10px; border-radius: var(--rrs-radius-sm); border: 1px solid var(--rrs-border);">
-              <strong>${isEs ? 'Registros Públicos:' : 'Public Records:'}</strong> Folio <code style="font-size: 0.78rem; font-family: monospace;">${item.folio}</code><br/>
-              <span>${item.permits}</span>
+            <div style="font-size: 0.72rem; color: var(--rrs-text-muted); background: var(--rrs-bg-subtle); padding: 8px 10px; border-radius: var(--rrs-radius-sm); border: 1px solid var(--rrs-border); margin-top: 6px; line-height: 1.45;">
+              <strong>${isEs ? 'Registros Públicos (Folio):' : 'Public Records (Folio):'}</strong> <code style="font-size: 0.78rem; font-family: monospace;">${item.folio}</code><br/>
+              <span style="display: block; margin-top: 4px; color: #D97706; font-style: italic;">
+                ⚠️ ${isEs ? 'Extraído de registros públicos del desarrollador. Puede no ser preciso ni estar actualizado.' : 'Extracted from developer public records; may not be accurate or current.'}
+              </span>
             </div>
 
             <div class="rrs-addr-card-footer">
@@ -7139,7 +7120,7 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
             <td>${item.sqft} ${isEs ? 'pies²' : 'sq ft'}</td>
             <td><strong>${item.pct}</strong></td>
             <td><code style="font-family: monospace; font-size: 0.8rem;">${item.folio}</code></td>
-            <td style="font-size: 0.78rem; color: var(--rrs-text-muted);">${item.permits}</td>
+            <td style="font-size: 0.72rem; color: #D97706; line-height: 1.35;">⚠️ ${isEs ? 'Extraído de registros del desarrollador; verificar con Miami-Dade.' : 'Extracted from developer records; verify with Miami-Dade.'}</td>
             <td>
               <div style="display: flex; gap: 6px; align-items: center;">
                 <button type="button" class="rrs-addr-plan-btn rrs-addr-plan-btn-sm" data-unit="${item.unit}" data-bldg="${item.bldg}" title="View unit architectural layout">
@@ -7664,34 +7645,20 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
         </table>
       </div>
 
-      <!-- Construction & Building Code Card -->
-      <div class="rrs-plan-spec-card">
-        <h4 class="rrs-plan-spec-card-title">
-          <span>🏛️</span>
-          <span>${isEs ? 'Normativas y Seguridad' : 'Code Standards & Life Safety'}</span>
+      <!-- Developer Public Records Disclaimer Card -->
+      <div class="rrs-plan-spec-card" style="border: 1px solid var(--rrs-border); background: var(--rrs-bg-subtle);">
+        <h4 class="rrs-plan-spec-card-title" style="color: #D97706; margin-bottom: 8px;">
+          <span>⚠️</span>
+          <span>${isEs ? 'Aviso de Registros del Desarrollador' : 'Developer Public Records Disclaimer'}</span>
         </h4>
-        <table class="rrs-plan-spec-table">
-          <tr>
-            <td class="rrs-lbl">${isEs ? 'Altura de Techo' : 'Ceiling Clearance'}</td>
-            <td class="rrs-val">${isTownhome ? '8\'6" Ground / Vaulted Upper' : item.unit === '101' ? '10\'0" Garden Soaring' : '8\' 6" Finished'}</td>
-          </tr>
-          <tr>
-            <td class="rrs-lbl">${isEs ? 'Vidrios de Impacto' : 'Impact Glazing'}</td>
-            <td class="rrs-val">Miami-Dade NOA HVHZ Approved</td>
-          </tr>
-          <tr>
-            <td class="rrs-lbl">${isEs ? 'Zona de Inundación' : 'FEMA Flood Zone'}</td>
-            <td class="rrs-val">Zone AE (Master RCBAP Active)</td>
-          </tr>
-          <tr>
-            <td class="rrs-lbl">${isEs ? 'Climatización' : 'Mechanical'}</td>
-            <td class="rrs-val">Central HVAC &bull; 40-Gal Electric W/H</td>
-          </tr>
-          <tr>
-            <td class="rrs-lbl">${isEs ? 'Folio Miami-Dade' : 'County Folio'}</td>
-            <td class="rrs-val"><code style="font-size:0.75rem;">${item.folio}</code></td>
-          </tr>
-        </table>
+        <p style="font-size: 0.78rem; color: var(--rrs-text-muted); line-height: 1.55; margin: 0 0 10px 0;">
+          ${isEs
+            ? 'La información y planos presentados provienen de los documentos públicos originales del desarrollador (Declaración de Condominio, Anexo A). Puede no ser precisa ni estar actualizada y no refleja remodelaciones no registradas de la unidad. Verifique los registros oficiales en la oficina del Tasador de la Propiedad del Condado de Miami-Dade (Folio).'
+            : 'Unit specifications and floor plan layouts were extracted from original developer public records (Declaration of Condominium Exhibit A). This information may not be accurate, complete, or current and may not reflect unrecorded unit owner renovations. Verify official live records directly with the Miami-Dade County Property Appraiser (PA Folio).'}
+        </p>
+        <div style="font-size: 0.75rem; color: var(--rrs-text-heading); font-weight: 700;">
+          <span>Miami-Dade Folio: </span><code style="font-family: monospace; font-size: 0.8rem;">${item.folio}</code>
+        </div>
       </div>
     `;
   }
@@ -7702,35 +7669,11 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
   const planModalTitle = document.getElementById('rrs-plan-modal-unit-title');
   const planModalSubtitle = document.getElementById('rrs-plan-modal-subtitle');
   const planSvgContainer = document.getElementById('rrs-plan-svg-container');
-  const planSurveyContainer = document.getElementById('rrs-plan-survey-container');
   const planSidebar = document.getElementById('rrs-plan-sidebar');
   const planCloseBtn = document.getElementById('rrs-plan-close-btn');
-  const planPrintBtn = document.getElementById('rrs-plan-print-btn');
-  const planTabLayout = document.getElementById('rrs-plan-tab-layout');
-  const planTabSurvey = document.getElementById('rrs-plan-tab-survey');
-  const planSurveyImg = document.getElementById('rrs-plan-survey-img');
-  const planSurveyExtLink = document.getElementById('rrs-plan-survey-ext-link');
-  const planSurveyToggleDoc = document.getElementById('rrs-plan-survey-toggle-doc');
   const planFolioDirect = document.getElementById('rrs-plan-folio-direct');
 
-  let activeSurveyDoc = 'plat'; // 'plat' (120928) or 'floorplate' (120704)
   let currentModalUnit = null;
-
-  function updateSurveyImage() {
-    const isPlat = activeSurveyDoc === 'plat';
-    const src = isPlat ? 'media/Screenshot 2026-10-10 120928.png' : 'media/Screenshot 2026-10-10 120704.png';
-    if (planSurveyImg) {
-      planSurveyImg.src = src;
-      planSurveyImg.alt = isPlat ? 'Recorded Condominium Boundary Plat & Survey' : 'Recorded Tower Architectural Floorplate Layout';
-    }
-    if (planSurveyExtLink) {
-      planSurveyExtLink.href = src;
-      planSurveyExtLink.textContent = isPlat ? 'Full Plat Image ↗' : 'Full Floorplate Image ↗';
-    }
-    if (planSurveyToggleDoc) {
-      planSurveyToggleDoc.textContent = isPlat ? 'Switch to: Tower Floorplate Layout' : 'Switch to: Boundary Site Plat';
-    }
-  }
 
   function openFloorPlanModal(item) {
     currentModalUnit = item;
@@ -7756,21 +7699,13 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
       planSidebar.innerHTML = generateSidebarHTML(item);
     }
 
-    // Reset view to Unit Layout
-    if (planTabLayout && planTabSurvey) {
-      planTabLayout.classList.add('active');
-      planTabSurvey.classList.remove('active');
-    }
     if (planSvgContainer) planSvgContainer.style.display = 'flex';
-    if (planSurveyContainer) planSurveyContainer.style.display = 'none';
 
     // Direct folio link
     if (planFolioDirect) {
       planFolioDirect.href = 'https://www.miamidade.gov/Apps/PA/propertysearch/#/';
       planFolioDirect.textContent = `Miami-Dade Folio ${item.folio} ↗`;
     }
-
-    updateSurveyImage();
 
     if (planModal) {
       planModal.classList.add('active');
@@ -7798,37 +7733,6 @@ To request a unit-specific Certificate of Insurance (COI) naming your lending in
       closeFloorPlanModal();
     }
   });
-
-  if (planTabLayout) {
-    planTabLayout.addEventListener('click', () => {
-      planTabLayout.classList.add('active');
-      if (planTabSurvey) planTabSurvey.classList.remove('active');
-      if (planSvgContainer) planSvgContainer.style.display = 'flex';
-      if (planSurveyContainer) planSurveyContainer.style.display = 'none';
-    });
-  }
-
-  if (planTabSurvey) {
-    planTabSurvey.addEventListener('click', () => {
-      planTabSurvey.classList.add('active');
-      if (planTabLayout) planTabLayout.classList.remove('active');
-      if (planSvgContainer) planSvgContainer.style.display = 'none';
-      if (planSurveyContainer) planSurveyContainer.style.display = 'flex';
-    });
-  }
-
-  if (planSurveyToggleDoc) {
-    planSurveyToggleDoc.addEventListener('click', () => {
-      activeSurveyDoc = activeSurveyDoc === 'plat' ? 'floorplate' : 'plat';
-      updateSurveyImage();
-    });
-  }
-
-  if (planPrintBtn) {
-    planPrintBtn.addEventListener('click', () => {
-      window.print();
-    });
-  }
 
   // Initial Directory Render
   isDirectoryInitialized = true;
